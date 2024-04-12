@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'date.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/date.css')}}">
+
+<script>
+    let data = {{data|tojson}};
+    let contestants = {{contestants|tojson}};
+</script>
+
+<div class="row">
+    <div class="col-12">
+        <div id="title"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="contestantRow"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="roseRow"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="rosesLeft"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="rosesLeft"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div id="interface"></div>
+    </div>
+</div>
+
+
+
+{% endblock %}

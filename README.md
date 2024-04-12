@@ -4,8 +4,8 @@ Learn how the Bachelor works with this interactive Flask app!
 
 # Contributors
 
-👨‍💻 **Quinn Booth**
-👨‍💻 **Dani Dassum**
-👨‍💻 **David Nguyen**
-👨‍💻 **Alice Wang**
+👨‍💻 **Quinn Booth**<br>
+👨‍💻 **Dani Dassum**<br>
+👨‍💻 **David Nguyen**<br>
+👨‍💻 **Alice Wang**<br>
 <br><br>
