@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/precious');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#petalsContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#petalsVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+}
+
+#petalsVideo:hover {
+    cursor: default;
+}
+
+.blackBarTop,
+.blackBarBottom {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    z-index: 999;
+}
+
+.blackBarTop {
+    top: 0;
+}
+
+.blackBarBottom {
+    bottom: 0;
+}
+
+.titleOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -100%);
+    text-align: center;
+}
+
+.bachelor {
+    color: white;
+    font-family: 'Precious', sans-serif;
+    font-size: 6vw;
+    opacity: 0;
+    animation: fadeBachelor 3s ease forwards;
+}
+
+.nation {
+    color: white;
+    font-family: 'Precious', sans-serif;
+    font-size: 6vw;
+    opacity: 0;
+    animation: fadeNation 3s ease forwards;
+    margin-left: 2vw;
+}
+
+.learn-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    background-color: #750000; /* Romantic red */
+    color: white;
+    font-family: 'Pacifico';
+    font-size: 1.5vw;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeButton 4s ease forwards;
+    z-index: 9999;
+}
+
+.learn-button:hover {
+    background-color: #ff6666; /* Lighter shade of red on hover */
+}
+
+@keyframes fadeBachelor {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeNation {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeButton {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}

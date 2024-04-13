@@ -3,9 +3,17 @@
 {% block content %}
 
 <script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/home.css')}}">
 
-<div class="container">
-    TEST
+<div id="petalsContainer">
+    <div class="blackBarTop"></div>
+    <iframe id="petalsVideo" width="1280" height="720" src="https://www.youtube.com/embed/CGGdFuG0fg4?autoplay=1&loop=1&playlist=CGGdFuG0fg4&controls=0&mute=1&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <div class="blackBarBottom"></div>
+    <div class="titleOverlay">
+        <span class="bachelor">Bachelor</span>
+        <span class="nation">Nation</span>
+    </div>
+    <button class="learn-button">Learn How It Works</button>
 </div>
 
 {% endblock %}

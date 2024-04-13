@@ -51,7 +51,7 @@ quiz_pages = {
 #####################      ROUTES      #####################
 
 @app.route('/')
-def welcome():
+def home():
    return render_template('home.html')   
 
 @app.route('/learn/<page_num>')
