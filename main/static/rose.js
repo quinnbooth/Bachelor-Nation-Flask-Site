@@ -25,6 +25,17 @@ function load_contestants(contestants) {
                     $("#rosesLeft").text(`Roses remaining: 0`);
                     ui.helper.draggable('destroy');
                     $(this).droppable('disable');
+
+                    let nextPopup = $(`<div id='nextPopup'>`);
+                    nextPopup.text("You gave out all of your roses!")
+                    let nextBtn = $(`<button id='nextBtn'>`);
+                    nextBtn.text("Continue");
+                    nextBtn.click(function(event) {
+                        window.location.href = data['nextPage'];
+                    });
+                    
+                    nextPopup.append(nextBtn);
+                    $("#contestantRow").append(nextPopup);
                 }
             },
             over: function(event, ui) {
@@ -40,13 +51,11 @@ function load_contestants(contestants) {
 
 let roses_left = 0;
 let rose = $(`<img class="rose" alt="Rose" src="https://icons.iconarchive.com/icons/miniartx/gifts-2/256/rose-icon.png">`).draggable({ revert: "invalid" });
-let palmer = $(`<img class="palmer" alt="Jesse Palmer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7RRbcZWghn-ZIql1Q8wv-IZXzAwOBahfyT6oRmkJJg&s">`)
 
 $(document).ready(function() { 
 
     roses_left = parseInt(data['roses']);
 
-    console.log(roses_left);
     let title = data['title'];
     let description = data['description'];
 
@@ -55,6 +64,5 @@ $(document).ready(function() {
     $("#roseRow").append(rose);
     $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
     roses_left -= 1;
-    console.log(roses_left);
     $("#interface").text(description);
 });

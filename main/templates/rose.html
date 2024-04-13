@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename = 'date.js') }}"></script>
-<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/date.css')}}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'rose.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/rose.css')}}">
 
 <script>
     let data = {{data|tojson}};
@@ -40,7 +40,5 @@
         <div id="interface"></div>
     </div>
 </div>
-
-
 
 {% endblock %}

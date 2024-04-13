@@ -95,3 +95,26 @@
 .hovering:hover .popup {
     display: none;
 }
+
+#nextPopup {
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    z-index: 999;
+}
+
+#nextBtn {
+    margin-top: 20px;
+}
+
+#nextBtn:hover {
+    background-color: beige;
+    margin-top: 20px;
+}

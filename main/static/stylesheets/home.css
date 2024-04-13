@@ -72,12 +72,12 @@ body {
     margin-left: 2vw;
 }
 
-.learn-button {
+#learnButton {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 50%;
-    background-color: #750000; /* Romantic red */
+    background-color: #750000;
     color: white;
     font-family: 'Pacifico';
     font-size: 1.5vw;
@@ -90,8 +90,8 @@ body {
     z-index: 9999;
 }
 
-.learn-button:hover {
-    background-color: #ff6666; /* Lighter shade of red on hover */
+#learnButton:hover {
+    background-color: #ff6666;
 }
 
 @keyframes fadeBachelor {

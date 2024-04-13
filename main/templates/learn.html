@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/learn.css')}}">
+
+<script>
+    let data = {{data|tojson}};
+</script>
+
+<div class="learnContainer">
+    <div class="dialogueBox">
+        <p id="dialogueText">{{ data['text'] }}</p>
+    </div>
+    <div class="speakerImage">
+        <img src="{{ data['speakerImage'] }}" alt="{{ data['speakerName'] }}">
+        {{ data['speakerName'] }}
+    </div>
+    <button id="nextButton">Next</button>
+</div>
+
+
+{% endblock %}
