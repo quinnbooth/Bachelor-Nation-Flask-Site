@@ -79,13 +79,67 @@ rose_pages = {
       "roses": 5,
       "contestants": [1, 4, 3, 2, 3, 1, 4, 2],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
-      "nextPage": "/"
+      "nextPage": "/quiz"
    }
 }
 
 quiz_pages = {
-
+   "1": {
+      "questionId": "1",
+      "question": "In a 2-on-1, what usually happens with the girl that doesn’t get the rose?",
+      "questionType": "mult_choice",
+      "choices": ["She goes back to the mansion and waits for the next events",
+                  "She joins the group date that Joey goes on next ",
+                  "She is sent home, but first she gets to say her goodbyes to the girls",
+                  "She is sent home immediately"],
+      "answer": [3]
+   },
+   "2": {
+      "questionId": "2",
+      "question": "Question here?",
+      "questionType": "fill_blank",
+      "choices": [],
+      "answer": ["answer here"]
+   },
+   "3": {
+      "questionId": "3",
+      "question": "Question here?",
+      "questionType": "true_false",
+      "choices": [],
+      "answer": ["true"]
+   },
+   "4": {
+      "questionId": "4",
+      "question": "Question here?",
+      "questionType": "true_false",
+      "choices": [],
+      "answer": ["true"]
+   },
+   "5": {
+      "questionId": "5",
+      "question": "Question here?",
+      "questionType": "mult_select",
+      "choices": ["blah",
+                  "blah",
+                  "blah",
+                  "blah"],
+      "answer": [0, 2, 3]
+   },
+   "6": {
+      "questionId": "6",
+      "question": "Question here?",
+      "questionType": "sort",
+      "choices": ["blah",
+                  "blah",
+                  "blah",
+                  "blah"],
+      "answer": [0, 1, 2, 3, 4]
+   }
 }
+
+# Sets used to keep track of which questions user got correct / incorrect in quiz section
+correct = list()
+incorrect = list()
 
 
 #####################      ROUTES      #####################
@@ -108,11 +162,40 @@ def rose(page_num):
 def learn(page_num):
    global learn_pages
    data = learn_pages[str(page_num)]
-   return render_template('learn.html', data=data)   
+   return render_template('learn.html', data=data)
+
+@app.route('/quiz')
+def quiz_home():
+   global correct
+   global incorrect
+   data = {
+      "correct": correct,
+      "incorrect": incorrect
+   }
+   return render_template('quiz_home.html', data=data)
+
+@app.route('/quiz/<page_num>')
+def quiz(page_num):
+   global quiz_pages
+   data = quiz_pages[str(page_num)]
+   return render_template('quiz.html', data=data)   
 
 #####################  AJAX FUNCTIONS  #####################
 
-
+@app.route('/quiz_handler', methods=['POST'])
+def search():
+   global correct
+   global incorrect
+   json_data = request.get_json()
+   isCorrect = json_data["isCorrect"]
+   question_id = json_data["id"]
+   
+   if isCorrect:
+      correct.append(question_id)
+   else:
+      incorrect.append(question_id)
+            
+   return jsonify({'redirect': '/quiz'})
 
 ############################################################
 

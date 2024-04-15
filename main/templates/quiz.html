@@ -1,0 +1,29 @@
+{% extends "layout.html" %} {% block content %}
+
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'quiz.js') }}"
+></script>
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='stylesheets/quiz.css')}}"
+/>
+
+<script>
+  let data = {{data|tojson}};
+</script>
+
+<div id="questionContainer">
+  <h3>Question {{ data.questionId }}</h3>
+
+  <h3>{{ data.question }}</h3>
+
+  <div id="questionBody"></div>
+
+  <div id="buttonContainer">
+    <a href="/quiz"><div class="quizButton">Back</div></a>
+    <div class="quizButton" id="quizSubmit">Submit</div>
+  </div>
+</div>
+
+{% endblock %}
