@@ -65,4 +65,9 @@ $(document).ready(function() {
     $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
     roses_left -= 1;
     $("#interface").text(description);
+    $('#handbookButton').click(function() {
+        console.log('Button was clicked!');
+    });
+    // $('#handbookModal').modal('show');
+
 });

@@ -4,40 +4,75 @@
 
 <script type="text/javascript" src="{{ url_for('static', filename = 'rose.js') }}"></script>
 <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/rose.css')}}">
+<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<!-- Ensure that jQuery comes first, then Popper.js, and then Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/umd/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 <script>
     let data = {{data|tojson}};
     let contestants = {{contestants|tojson}};
 </script>
 
+
 <div class="row">
     <div class="col-12">
         <div id="title"></div>
     </div>
 </div>
+
 <div class="row">
     <div class="col-12">
         <div id="contestantRow"></div>
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
-        <div id="roseRow"></div>
+    <div class = "col-2"></div>
+    <div class="col-8 text-center">
+        <div class = "row">
+            <div id="roseRow"></div>
+        </div>
+        <div class = "row">
+            <div id="rosesLeft"></div>
+        </div>        
+    </div>
+    <div class="col-2 text-end">
+        <div class = "row mt-5">
+            <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal"">
+                Handbook
+            </button>
+        </div>  
     </div>
 </div>
-<div class="row">
-    <div class="col-12">
-        <div id="rosesLeft"></div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <div id="rosesLeft"></div>
-    </div>
-</div>
+
+
+<!-- <div class="row">
+    
+</div> -->
+
 <div class="row">
     <div class="col-12">
         <div id="interface"></div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="handbookModal" tabindex="-1" aria-labelledby="handbookModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="handbookModalLabel">Handbook</h5>
+                <!-- Close button with Bootstrap 5 data attribute -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{ data.handbook | safe }}
+            </div>
+        </div>
     </div>
 </div>
 
