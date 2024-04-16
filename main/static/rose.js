@@ -45,6 +45,13 @@ function load_contestants(contestants) {
                 $(this).removeClass("hovering");
             }
         });
+        profile.on('click', function() {
+            var videoUrl = data.videos[contestant.name];
+            $('#videoFrame').attr('src', videoUrl);
+
+            var myModal = new bootstrap.Modal(document.getElementById('profileVideoModal'));
+            myModal.show();
+        });
         $("#contestantRow").append(profile);
     });
 }
