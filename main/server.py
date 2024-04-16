@@ -5,6 +5,11 @@ import re
 
 app = Flask(__name__)
 
+main_images = {
+   "host": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/163580111_288668689295431_2707202046743395725_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=62bwzzbew-UAb6pIuaB&_nc_ht=scontent-lga3-1.xx&oh=00_AfCPkt3xUkIo7M5b7m4rBqlHmvYQHG2YFmYEFub----_9w&oe=66456A48",
+   "bachelor": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg"
+}
+
 people_list = {
    "1": {
          "name": "Kelsey A.",
@@ -176,7 +181,7 @@ learn_pages = {
                      Let’s go ahead and start!
                ''',
       "textMedia": "",
-      "speakerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7RRbcZWghn-ZIql1Q8wv-IZXzAwOBahfyT6oRmkJJg&s",
+      "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/learn/2"
@@ -190,7 +195,7 @@ learn_pages = {
                      * I'm on the lookout for that soulmate connection, hoping to find my forever partner.
                ''',
       "textMedia": "",
-      "speakerImage": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg",
+      "speakerImage": main_images["bachelor"],
       "speakerName": "Joey",
       "audio": "implement this last if we have time???",
       "nextPage": "/rose/1" # should lead to bracket  
@@ -201,7 +206,7 @@ learn_pages = {
                      Then, a cocktail party inside the Bachelor Mansion will give the women a chance to talk to Joey 1-on-1. Before the night is over, Joey will have his first rose ceremony of the season.)
                ''',
       "textMedia": "",
-      "speakerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7RRbcZWghn-ZIql1Q8wv-IZXzAwOBahfyT6oRmkJJg&s",
+      "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/rose/2"
@@ -213,7 +218,7 @@ learn_pages = {
                      And finally, we’ll get down to 4 contestants and get ready for hometowns.
                ''',
       "textMedia": "",
-      "speakerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7RRbcZWghn-ZIql1Q8wv-IZXzAwOBahfyT6oRmkJJg&s",
+      "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/rose/3"
