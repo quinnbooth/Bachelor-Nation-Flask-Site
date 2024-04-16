@@ -254,7 +254,7 @@ rose_pages = {
       "nextPage": "/rose/4",
       "handbook_q": "What are hometown visits?",
       "handbook": "Hometown visits are when the bachelor visits the hometown of each of the remaining 4 contestants and meets their families. This is a chance to see how well he blinds with the contestants’ families and for his bond with each contestant to get deeper and stronger. After all the hometown visits, Joey will eliminate 1 of the women in the rose ceremony, so stakes are high!",
-      "instructions": "Blah Blah"
+      "instructions": "Click each girl to visit their hometown before choosing!"
    },
    "4": {
       "title": "Fantasy Suites",
@@ -264,7 +264,7 @@ rose_pages = {
       "nextPage": "/rose/5",
       "handbook_q": "What are Fantasy Suites?",
       "handbook": "The Fantasy Suites phase occurs toward the end of each season and takes place in a luxurious setting like a hotel suite or private accommodation. During this stage, the bachelor and the three remaining contestants are given the opportunity to spend private, overnight 1-on-1 dates together without cameras present - a great opportunity for them to deepen their conversations and connections, and discuss more personal matters before the next rose ceremony!",
-      "instructions": "Blah Blah"
+      "instructions": "Click each girl to get a sneak peek of the dates before choosing!"
    },
    "5": {
       "title": "Engagement",
@@ -274,7 +274,7 @@ rose_pages = {
       "nextPage": "/quiz",
       "handbook_q": "What happens in the engagement ceremony?",
       "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!",
-      "instructions": "Blah Blah"
+      "instructions": "Who will be the lucky girl? Who will go home empty-handed?"
    }
 }
 
