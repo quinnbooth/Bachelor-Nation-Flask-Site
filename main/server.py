@@ -53,29 +53,64 @@ learn_pages = {
       "speakerImage": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg",
       "speakerName": "Joey",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/1"
+      "nextPage": "/rose/1" # should lead to bracket  
    },
    "3": {
-      "text":  '''   TEST :)
+      "text":  '''   Welcome to the First Week, specifically the First Night!
+                     Tonight, each woman will make their “limousine entrance” and meet Joey for the first time.
+                     Then, a cocktail party inside the Bachelor Mansion will give the women a chance to talk to Joey 1-on-1. Before the night is over, Joey will have his first rose ceremony of the season.)
                ''',
       "textMedia": "",
-      "speakerImage": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg",
-      "speakerName": "Joey",
+      "speakerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7RRbcZWghn-ZIql1Q8wv-IZXzAwOBahfyT6oRmkJJg&s",
+      "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/rose/2"
+   },
+   "4": {
+      "text":  '''   The first week is over!
+                     The next ~7 weeks/episodes will be group dates and 1-on-1’s galore! 
+                     We’ll always end each night with a rose ceremony of course. We’ll even be traveling the world for these dates! 
+                     And finally, we’ll get down to 4 contestants and get ready for hometowns.
+               ''',
+      "textMedia": "",
+      "speakerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7RRbcZWghn-ZIql1Q8wv-IZXzAwOBahfyT6oRmkJJg&s",
+      "speakerName": "Jesse Palmer",
+      "audio": "implement this last if we have time???",
+      "nextPage": "/rose/3"
    }
 }
 
 rose_pages = {
    "1": {
-      "title": "Fantasy Suite",
+      "title": "Bracket",
       "roses": 2,
       "contestants": [1, 2, 3],
       "description": "This is a description of Fantasy Suites. Hover over people for a description. Then give out your roses one by one.",
       "nextPage": "/learn/3"
    },
    "2": {
-      "title": "TEST",
+      "title": "Limo Entrances",
+      "roses": 5,
+      "contestants": [1, 4, 3, 2, 3, 1, 4, 2],
+      "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
+      "nextPage": "/learn/4"
+   },
+   "3": {
+      "title": "Hometowns",
+      "roses": 5,
+      "contestants": [1, 4, 3, 2, 3, 1, 4, 2],
+      "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
+      "nextPage": "/rose/4"
+   },
+   "4": {
+      "title": "Fantasy Suites",
+      "roses": 5,
+      "contestants": [1, 4, 3, 2, 3, 1, 4, 2],
+      "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
+      "nextPage": "/rose/5"
+   },
+   "5": {
+      "title": "Engagement",
       "roses": 5,
       "contestants": [1, 4, 3, 2, 3, 1, 4, 2],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
