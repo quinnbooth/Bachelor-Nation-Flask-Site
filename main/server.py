@@ -25,6 +25,146 @@ people_list = {
          "name": "Maria",
          "image": "https://wegotthiscovered.com/wp-content/uploads/2024/01/The-Bachelorette_-Maria.png",
          "description": "This person is SUPER cool!"
+   },
+   "5": {
+         "name": "Allison",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362397/0fa781b5411ff6127e806dedf6e1404b/1000x400-Q90_0fa781b5411ff6127e806dedf6e1404b.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "6": {
+         "name": "Autumn",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362398/9e3f9d1ccc324feef9ecdac4f6442995/1000x400-Q90_9e3f9d1ccc324feef9ecdac4f6442995.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "7": {
+         "name": "Chandler",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362399/63f493f17ef609dcd15a4a2f6d698551/166x166-Q90_63f493f17ef609dcd15a4a2f6d698551.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "8": {
+         "name": "Chrissa",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362404/c6085134bf425c566d33eba2e1e6b36e/166x166-Q90_c6085134bf425c566d33eba2e1e6b36e.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "9": {
+         "name": "Edwina",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362410/cdd1fa5318d92221329b5f4b9a0fa6b7/166x166-Q90_cdd1fa5318d92221329b5f4b9a0fa6b7.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "10": {
+         "name": "Erika",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362411/b6eba7c304b944a540ea5e1279b6a077/166x166-Q90_b6eba7c304b944a540ea5e1279b6a077.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "11": {
+         "name": "Evalin",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362486/15a41c1653147a5a9dbb1aa8b30b5a16/166x166-Q90_15a41c1653147a5a9dbb1aa8b30b5a16.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "12": {
+         "name": "Jenn",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362491/6f3352fede1dbd6b6f1634c554871f3b/166x166-Q90_6f3352fede1dbd6b6f1634c554871f3b.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "13": {
+         "name": "Jess",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362515/bdda79724754e41d1edb66e86b292196/166x166-Q90_bdda79724754e41d1edb66e86b292196.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "14": {
+         "name": "Katelyn",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362576/14a66c5c15561525eb359088e53eac8c/166x166-Q90_14a66c5c15561525eb359088e53eac8c.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "15": {
+         "name": "Kayla",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362582/cc97aaeddc7e86cf64bc82b524b51478/166x166-Q90_cc97aaeddc7e86cf64bc82b524b51478.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "16": {
+         "name": "Kelsey T.",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362600/724db8e0fda6a13e5699f7cc968bb780/166x166-Q90_724db8e0fda6a13e5699f7cc968bb780.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "17": {
+         "name": "Kyra",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362608/bbd18769e19f61942a398734da3a5d98/166x166-Q90_bbd18769e19f61942a398734da3a5d98.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "18": {
+         "name": "Lanie",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362614/3c08f4afcb9e2816e8d80bcd8f33241d/166x166-Q90_3c08f4afcb9e2816e8d80bcd8f33241d.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "19": {
+         "name": "Lauren",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362618/ea9437fad00456c0f8bcf6802d12f9da/166x166-Q90_ea9437fad00456c0f8bcf6802d12f9da.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "20": {
+         "name": "Lea",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362622/2facb01d9e9bbc8f475308c5c3933e58/166x166-Q90_2facb01d9e9bbc8f475308c5c3933e58.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "21": {
+         "name": "Lexi",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362628/b8df1b8af1b7dc1615b1ff10bcdf7b29/166x166-Q90_b8df1b8af1b7dc1615b1ff10bcdf7b29.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "22": {
+         "name": "Madina",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362636/5e195207dc93bf388757cce280fd0e38/166x166-Q90_5e195207dc93bf388757cce280fd0e38.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "23": {
+         "name": "Marlena",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362659/e757fdeef9bebce993839a0a7c5660c8/166x166-Q90_e757fdeef9bebce993839a0a7c5660c8.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "24": {
+         "name": "Nat",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362674/2a5fe05c901758aee25019a2992e2267/166x166-Q90_2a5fe05c901758aee25019a2992e2267.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "25": {
+         "name": "Sam",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362694/79584baa688bac89bdda0cc67c09eebe/166x166-Q90_79584baa688bac89bdda0cc67c09eebe.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "26": {
+         "name": "Samantha",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362702/5b690e89d3803d2731d659f7aec0b062/166x166-Q90_5b690e89d3803d2731d659f7aec0b062.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "27": {
+         "name": "Sandra",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362776/52852754a54ae540d8cbc2cef9e1760e/166x166-Q90_52852754a54ae540d8cbc2cef9e1760e.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "28": {
+         "name": "Starr",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362782/449fa9825f124fbc031a39c0d581f311/166x166-Q90_449fa9825f124fbc031a39c0d581f311.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "29": {
+         "name": "Sydney",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362792/00f9f17106a2edacef3f8fbdb8cefe65/166x166-Q90_00f9f17106a2edacef3f8fbdb8cefe65.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "30": {
+         "name": "Talyah",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362798/f4efb833a918980d7a192282fbc95300/166x166-Q90_f4efb833a918980d7a192282fbc95300.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "31": {
+         "name": "Taylor",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362807/ae7a03e228b9da651096cbb75dfd2050/166x166-Q90_ae7a03e228b9da651096cbb75dfd2050.jpg",
+         "description": "This person is SUPER cool!"
+   },
+   "32": {
+         "name": "Zoe",
+         "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362814/718fd13fc88b8df22d5b74885166ca6c/166x166-Q90_718fd13fc88b8df22d5b74885166ca6c.jpg",
+         "description": "This person is SUPER cool!"
    }
 }
 
@@ -93,7 +233,7 @@ rose_pages = {
    "2": {
       "title": "Limo Entrances",
       "roses": 5,
-      "contestants": [1, 4, 3, 2, 3, 1, 4, 2],
+      "contestants": list(range(1, 33)),
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/learn/4", 
       "handbook_q": "What are Limousine Entrances?",
