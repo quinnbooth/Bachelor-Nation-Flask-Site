@@ -233,7 +233,8 @@ rose_pages = {
       "description": "This is a description of Fantasy Suites. Hover over people for a description. Then give out your roses one by one.",
       "nextPage": "/learn/3",
       "handbook_q": "TBD",
-      "handbook": "TBD"
+      "handbook": "TBD",
+      "instructions": "Blah Blah"
    },
    "2": {
       "title": "Limo Entrances",
@@ -242,7 +243,8 @@ rose_pages = {
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/learn/4", 
       "handbook_q": "What are Limousine Entrances?",
-      "handbook": "Limousine Entrances are when the contestants meet Joey for the first time! Each woman gets to exit the limo (or whichever vessel they choose) and meet Joey one-on-one, usually introducing herself with a prop that’s significant to her, or her background. It’s important to make a good and lasting impression!"
+      "handbook": "Limousine Entrances are when the contestants meet Joey for the first time! Each woman gets to exit the limo (or whichever vessel they choose) and meet Joey one-on-one, usually introducing herself with a prop that’s significant to her, or her background. It’s important to make a good and lasting impression!",
+      "instructions": "Before the roses, click on a girl to check out her limousine entrance!"
    },
    "3": {
       "title": "Hometowns",
@@ -251,7 +253,8 @@ rose_pages = {
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/rose/4",
       "handbook_q": "What are hometown visits?",
-      "handbook": "Hometown visits are when the bachelor visits the hometown of each of the remaining 4 contestants and meets their families. This is a chance to see how well he blinds with the contestants’ families and for his bond with each contestant to get deeper and stronger. After all the hometown visits, Joey will eliminate 1 of the women in the rose ceremony, so stakes are high!"
+      "handbook": "Hometown visits are when the bachelor visits the hometown of each of the remaining 4 contestants and meets their families. This is a chance to see how well he blinds with the contestants’ families and for his bond with each contestant to get deeper and stronger. After all the hometown visits, Joey will eliminate 1 of the women in the rose ceremony, so stakes are high!",
+      "instructions": "Blah Blah"
    },
    "4": {
       "title": "Fantasy Suites",
@@ -260,7 +263,8 @@ rose_pages = {
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/rose/5",
       "handbook_q": "What are Fantasy Suites?",
-      "handbook": "The Fantasy Suites phase occurs toward the end of each season and takes place in a luxurious setting like a hotel suite or private accommodation. During this stage, the bachelor and the three remaining contestants are given the opportunity to spend private, overnight 1-on-1 dates together without cameras present - a great opportunity for them to deepen their conversations and connections, and discuss more personal matters before the next rose ceremony!"
+      "handbook": "The Fantasy Suites phase occurs toward the end of each season and takes place in a luxurious setting like a hotel suite or private accommodation. During this stage, the bachelor and the three remaining contestants are given the opportunity to spend private, overnight 1-on-1 dates together without cameras present - a great opportunity for them to deepen their conversations and connections, and discuss more personal matters before the next rose ceremony!",
+      "instructions": "Blah Blah"
    },
    "5": {
       "title": "Engagement",
@@ -269,7 +273,8 @@ rose_pages = {
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/quiz",
       "handbook_q": "What happens in the engagement ceremony?",
-      "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!"
+      "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!",
+      "instructions": "Blah Blah"
    }
 }
 
@@ -342,11 +347,12 @@ def home():
 def rose(page_num):
    global people_list
    global rose_pages
+   global main_images
    data = rose_pages[str(page_num)]
    contestants = []
    for person in data["contestants"]:
       contestants.append(people_list[str(person)])
-   return render_template('rose.html', data=data, contestants=contestants)
+   return render_template('rose.html', data=data, contestants=contestants, main_images=main_images)
 
 @app.route('/learn/<page_num>')
 def learn(page_num):

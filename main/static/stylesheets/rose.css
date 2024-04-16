@@ -120,3 +120,52 @@
     background-color: beige;
     margin-top: 20px;
 }
+
+
+.host-guidance {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+}
+
+.speakerImage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.speakerImage img {
+    height: 10vh;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.dialogueBox {
+    background-color: #f0f0f0;
+    padding: 7px;
+    border-radius: 10px;
+    margin-right: 30px;
+    position: relative;
+    white-space: pre-line;
+    text-align: center;
+    width: 150px;
+}
+
+.dialogueBox::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 90%;
+    transform: translateX(-50%);
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent;
+}
+
+#dialogueText {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+}

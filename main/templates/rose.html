@@ -14,6 +14,7 @@
 <script>
     let data = {{data|tojson}};
     let contestants = {{contestants|tojson}};
+    let main_images = {{main_images|tojson}};
 </script>
 
 
@@ -23,20 +24,18 @@
     </div>
 </div>
 
-
-
-<div class="row">
-    <div class="col-12">
-        <div class="dialogueBox">
-            <p id="dialogueText">{{ data['text'] }}</p>
-        </div>
-        <div class="speakerImage">
-            <img src="{{ data['speakerImage'] }}" alt="{{ data['speakerName'] }}">
-            {{ data['speakerName'] }}
+<div class="row mb-5">
+    <div class="col-12 text-end">
+        <div id="hostGuidance" class="host-guidance">
+            <div class="dialogueBox">
+                <p id="dialogueText">{{ data.instructions  }}</p>
+            </div>
+            <div class="speakerImage">
+                <img src="{{ main_images['host'] }}" alt="{{ main_images['host'] }}">
+            </div>
         </div>
     </div>
 </div>
-
 
 <div class="row">
     <div class="col-12">
