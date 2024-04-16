@@ -308,7 +308,7 @@ quiz_pages = {
       "question": "In a 2-on-1, what usually happens with the girl that doesn’t get the rose?",
       "questionType": "mult_choice",
       "choices": ["She goes back to the mansion and waits for the next events",
-                  "She joins the group date that Joey goes on next ",
+                  "She joins the group date that Joey goes on next",
                   "She is sent home, but first she gets to say her goodbyes to the girls",
                   "She is sent home immediately"],
       "answer": [3]
@@ -322,14 +322,14 @@ quiz_pages = {
    },
    "3": {
       "questionId": "3",
-      "question": "Question here?",
+      "question": "A contestant can leave anytime she wants to.",
       "questionType": "true_false",
       "choices": [],
       "answer": ["true"]
    },
    "4": {
       "questionId": "4",
-      "question": "Question here?",
+      "question": "The last ceremony doesn’t involve a rose at all.",
       "questionType": "true_false",
       "choices": [],
       "answer": ["true"]
@@ -403,7 +403,7 @@ def quiz(page_num):
 #####################  AJAX FUNCTIONS  #####################
 
 @app.route('/quiz_handler', methods=['POST'])
-def search():
+def quiz_handler():
    global correct
    global incorrect
    json_data = request.get_json()

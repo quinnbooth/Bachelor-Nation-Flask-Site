@@ -29,6 +29,7 @@
   padding: 12px;
   font-weight: bold;
   border: 1px solid black;
+  user-select: none;
 }
 
 #quizModal {
@@ -52,6 +53,12 @@
   gap: 20px;
 }
 
+#trueFalseContainer {
+  display: flex;
+  width: 800px;
+  gap: 20px;
+}
+
 .quizChoice {
   height: 140px;
   width: 45%;
@@ -61,7 +68,6 @@
   padding: 12px;
   align-items: space-between;
   user-select: none;
-  list-style-type: none;
 }
 
 .quizButton {
@@ -74,6 +80,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 #buttonContainer {

@@ -7,6 +7,8 @@ let current_choice = null;
 $("#document").ready(function () {
   if (data.questionType === "mult_choice") {
     multChoiceHandler(data.choices, data.answer[0]);
+  } else if (data.questionType === "true_false") {
+    trueFalseHandler(data.answer[0]);
   } else {
     console.log(data.questionType);
   }
@@ -53,28 +55,78 @@ function multChoiceHandler(choices, answer) {
   });
 }
 
+function trueFalseHandler(answer) {
+  $("#questionBody").append(
+    `
+      <div id="trueFalseContainer"></div>
+    `
+  );
+  $("#trueFalseContainer").append(
+    `
+      <div id="true" class="quizChoice">
+          True
+      </div>
+      <div id="false" class="quizChoice">
+          False
+      </div>
+    `
+  );
+  $(".quizChoice").hover(function () {
+    $(this).css("background-color", "gray");
+  });
+  $(".quizChoice").mouseleave(function () {
+    $(this).css("background-color", "lightgray");
+  });
+  $(".quizChoice").on("click", function () {
+    makeSelection($(this));
+  });
+
+  $("#quizSubmit").on("click", function () {
+    let id = current_choice.attr("id");
+    if (id === answer.toString()) {
+      submitHandler({
+        isCorrect: true,
+        id: data.questionId,
+      });
+    } else {
+      submitHandler({
+        isCorrect: false,
+        id: data.questionId,
+      });
+    }
+  });
+}
+
 // Keeps track of which choice was selected and prevents users from
-// selecting multiple choices. Used for mult choice question.
-// Could probably be used for true false too.
-// TODO: When selection is made, maybe turn off hover highlight for the other options?
-// Alternatively, could make it so that clicking other options changes the current
-// selection to the new selection.
+// selecting multiple choices. Used for mult choice question and true false.
 function makeSelection(element) {
-  if (!(current_choice && current_choice !== element)) {
+  if (!current_choice) {
     element.css("border", "6px solid yellow");
     current_choice = element;
 
     element.off("click");
     element.on("click", function () {
-      element.css("border", "1px solid black");
-      current_choice = null;
-      console.log(element);
-      element.off("click");
-      element.on("click", function () {
-        makeSelection(element);
-      });
+      removeSelection(element);
+    });
+  } else {
+    element.css("border", "6px solid yellow");
+    removeSelection(current_choice);
+    current_choice = element;
+
+    element.off("click");
+    current_choice.on("click", function () {
+      removeSelection(element);
     });
   }
+}
+
+function removeSelection(element) {
+  element.css("border", "1px solid black");
+  element.off("click");
+  element.on("click", function () {
+    makeSelection(element);
+  });
+  current_choice = null;
 }
 
 // Pass in a JSON object with the following key-val pairs:
