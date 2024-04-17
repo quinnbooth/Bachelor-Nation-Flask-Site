@@ -13,6 +13,8 @@ $("#document").ready(function () {
     fillBlankHandler(data.answer[0]);
   } else if (data.questionType === "mult_select") {
     multSelectHandler(data.choices, data.answer);
+  } else if (data.questionType === "sort") {
+    sortHandler(data.choices, data.answer);
   } else {
     console.log(data.questionType);
   }
@@ -173,6 +175,72 @@ function multSelectHandler(choices, answer) {
     } else {
       submitHandler({
         isCorrect: false,
+        id: data.questionId,
+      });
+    }
+  });
+}
+
+function sortHandler(choices, answer) {
+  current_choice = Array(choices.length);
+
+  $("#questionBody").append(
+    `
+      <div id="choicesContainer"></div>
+      <div id="answerContainer"></div>
+    `
+  );
+  for (let i = 0; i < choices.length; i++) {
+    $("#choicesContainer").append(
+      `
+        <div id="choice${i}" class="draggable sortItem">
+            ${choices[i]}
+        </div>
+      `
+    );
+  }
+
+  for (let i = 0; i < choices.length; i++) {
+    $("#answerContainer").append(
+      `
+        <div id="answer${i}" class="sortItem droppable">
+        </div>
+      `
+    );
+  }
+
+  $(function () {
+    $(".draggable").draggable({
+      revert: "invalid",
+      snap: ".droppable",
+      snapMode: "inner",
+    });
+    $(".droppable").droppable({
+      drop: function (event, ui) {
+        let id = $(this).attr("id");
+        let id_answer = $(ui.draggable).attr("id");
+        current_choice[parseInt(id.charAt(id.length - 1))] = parseInt(
+          id_answer.charAt(id_answer.length - 1)
+        );
+      },
+    });
+  });
+
+  $("#quizSubmit").on("click", function () {
+    let succeed = true;
+    for (let i = 0; i < current_choice.length; i++) {
+      if (current_choice[i] !== answer[i]) {
+        succeed = false;
+        submitHandler({
+          isCorrect: false,
+          id: data.questionId,
+        });
+        break;
+      }
+    }
+    if (succeed) {
+      submitHandler({
+        isCorrect: true,
         id: data.questionId,
       });
     }

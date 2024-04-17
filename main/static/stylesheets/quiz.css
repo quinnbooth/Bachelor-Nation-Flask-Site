@@ -91,3 +91,24 @@
 #quizSubmit {
   background-color: #ffab40;
 }
+
+#choicesContainer {
+  display: flex;
+  gap: 20px;
+}
+
+#answerContainer {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px;
+}
+
+.sortItem {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  user-select: none;
+}

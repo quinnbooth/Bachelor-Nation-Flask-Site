@@ -346,14 +346,14 @@ quiz_pages = {
    },
    "6": {
       "questionId": "6",
-      "question": "Question here?",
+      "question": "Drag and drop the major events in order!",
       "questionType": "sort",
       "choices": ["Bachelorette is announced",
                   "Hometowns",
                   "Fantasy Suites",
                   "Visiting Joey's family",
                   "Joey gets engaged"],
-      "answer": [3, 1, 2, 0, 4]
+      "answer": [1, 2, 4, 3, 0]
    }
 }
 
