@@ -63,6 +63,10 @@ body, html {
     z-index: 999;
 }
 
+.letter-off {
+    display: none;
+}
+
 #letter-content {
     color: #000;
     font-size: 24px;
