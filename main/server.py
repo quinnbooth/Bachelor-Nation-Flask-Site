@@ -1,4 +1,5 @@
 from flask import Flask, Response, request, jsonify, render_template
+from datetime import datetime
 import json
 import uuid
 import re
@@ -444,8 +445,17 @@ quiz_pages = {
 correct = list()
 incorrect = list()
 
+# Times the user visited each page
+timestamps = []
 
 #####################      ROUTES      #####################
+
+@app.before_request
+def before_request():
+   if "static" in request.path:
+      return 
+   timestamps.append((request.path, datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+   print("\nVISIT LOG:", timestamps)
 
 @app.route('/')
 def home():
