@@ -4,6 +4,7 @@ $(document).ready(function() {
     var $envelopeContainer = $('#envelope-container');
     var $clickText = $('#click-text');
     var $letter = $('#letter');
+    $letter.toggle();
 
     $nextButton.click(function(event) {
         window.location.href = data['nextPage'];

@@ -52,7 +52,7 @@ body, html {
     z-index: 2; /* Stacking order */
     background-color: #f7f7f7;
     border: 1px solid #000;
-    transform: scaleY(0);
+    transform: scaleY(1);
     transform-origin: top;
     transition: transform 0.5s ease;
     padding: 10px;
@@ -60,27 +60,17 @@ body, html {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
+    z-index: 999;
 }
 
 #letter-content {
     color: #000;
-    font-size: 24px;  /* Increase the font size for better legibility */
+    font-size: 24px;
     transition: opacity 0.5s ease, z-index 0s 0.5s;
+    z-index: 9999;
 }
 
-.envelope-closed #letter-content {
-    opacity: 0;
-    z-index: -1; /* Stacking order */
-    transform: scaleY(0);
-    transition-delay: 0.35s;
-}
 
-.envelope-open #letter-content {
-    opacity: 1;
-    z-index: 5; /* Stacking order */
-    display: flex;
-    transform: translateY(0%);
-}
 
 .envelope-open .front {
     transform: translateY(-100%);
