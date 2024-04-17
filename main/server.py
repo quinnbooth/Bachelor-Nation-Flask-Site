@@ -12,11 +12,29 @@ main_images = {
 
 # rn, all the same vids for testing
 main_vids = {
+   "one_date": {
+      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466"
+   },
+   "two_date": {
+      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?start=99&end=404",
+      "Sydney": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466"
+   },
+   "group_date": {
+      "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
+      "Rachel": "https://www.youtube.com/embed/xCDc75KHlqY?start=187&end=255",
+      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?start=99&end=404",
+      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+      "Jess": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+      "Jenn": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+      "Allison": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+      "Autumn": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+      "Chandler": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+   },
    "hometowns": {
       "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Rachel": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Maria": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Daisy": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106"
+      "Rachel": "https://www.youtube.com/embed/xCDc75KHlqY?start=187&end=255",
+      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?start=99&end=404",
+      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466"
    },
    "fantasy_suites": {
       "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
@@ -24,171 +42,176 @@ main_vids = {
       "Daisy": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106"
    },
    "engagement": {
-      "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Daisy": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106"
+      "Kelsey A.": "https://www.youtube.com/watch?v=xWIjgu-EQPw",
+      "Daisy": "https://www.youtube.com/embed/0UFgP97ScGM?start=163&end=427"
    }
 }
 
 people_list = {
+   "0": {
+         "name": "None",
+         "image": "https://t3.ftcdn.net/jpg/05/62/05/20/360_F_562052065_yk3KPuruq10oyfeu5jniLTS4I2ky3bYX.jpg",
+         "description": "Discard"
+   },
    "1": {
          "name": "Kelsey A.",
          "image": "https://heavy.com/wp-content/uploads/2024/02/kelsey-anderson-bachelor.jpg?quality=65&strip=all",
-         "description": "This person is very cool!"
+         "description": "Kelsey A. grew up in Germany on a U.S. military base before moving to the states. Now that she is living in New Orleans, she likes to travel via streetcar and visit the French market."
    },
    "2": {
          "name": "Daisy",
          "image": "https://hips.hearstapps.com/hmg-prod/images/daisy-bio-170217-4395-65ae8e5560c64.jpg?crop=1xw:0.53525xh;center,top&resize=1200:*",
-         "description": "This person is very NOT cool!"
+         "description": "Daisy, like Taylor Swift, grew up on a Christmas tree farm. Her parents have been married for over 30 years and she wants to find a lasting love story just like them."
    },
    "3": {
          "name": "Rachel",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362682/e8cffaf4f8b6993e976bac6267b01e48/320x180-Q90_e8cffaf4f8b6993e976bac6267b01e48.jpg",
-         "description": "This person is kinda cool!"
+         "description": "Rachel doesn’t just live in Hawaii like Joey, but she also has Hawaiian roots and is looking forward to discussing Hawaiian food and culture with the bachelor. She also likes “Friends,” Jane Austen books, and hanging out with her friends and family."
    },
    "4": {
          "name": "Maria",
          "image": "https://wegotthiscovered.com/wp-content/uploads/2024/01/The-Bachelorette_-Maria.png",
-         "description": "This person is SUPER cool!"
+         "description": "Maria’s official ABC bio describes her as “bold,” and that might be an understatement as the trailer shows her arguing with another woman about spending time with Joey. The Canadian has a black belt in Taekwondo karate, loves spaghetti and enjoys watching horror movies."
    },
    "5": {
          "name": "Allison",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362397/0fa781b5411ff6127e806dedf6e1404b/1000x400-Q90_0fa781b5411ff6127e806dedf6e1404b.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Allison says she is looking for a love story straight out of a rom-com … and she’s willing to compete against her older sister and best friend, Lauren, to find it. The sisters have dated the same guy before, so hopefully their separate connections with Joey won’t put a strain on their relationship."
    },
    "6": {
          "name": "Autumn",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362398/9e3f9d1ccc324feef9ecdac4f6442995/1000x400-Q90_9e3f9d1ccc324feef9ecdac4f6442995.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Autumn, who is twin, comes from a big family in a small town. She loves Coldplay and once got a lip tattoo at a music festival."
    },
    "7": {
          "name": "Chandler",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362399/63f493f17ef609dcd15a4a2f6d698551/166x166-Q90_63f493f17ef609dcd15a4a2f6d698551.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Chandler says she is over dating apps and is ready to find a connection in real life. Her perfect date would be a night baking desserts with her boyfriend."
    },
    "8": {
          "name": "Chrissa",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362404/c6085134bf425c566d33eba2e1e6b36e/166x166-Q90_c6085134bf425c566d33eba2e1e6b36e.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Chrissa is a big fan of Colleen Hoover’s novels, breweries, Scrabble and golf. She was also born on Christmas."
    },
    "9": {
          "name": "Edwina",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362410/cdd1fa5318d92221329b5f4b9a0fa6b7/166x166-Q90_cdd1fa5318d92221329b5f4b9a0fa6b7.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Edwina was born in Liberia and eventually relocated to the United States with her family at the age of 11. She operates a crocheting business and enjoys taking spontaneous trips."
    },
    "10": {
          "name": "Erika",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362411/b6eba7c304b944a540ea5e1279b6a077/166x166-Q90_b6eba7c304b944a540ea5e1279b6a077.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Erika has a dog named Cleo and likes to paint. She is looking for a partner who is adventurous and will visit new restaurants with her."
    },
    "11": {
          "name": "Evalin",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362486/15a41c1653147a5a9dbb1aa8b30b5a16/166x166-Q90_15a41c1653147a5a9dbb1aa8b30b5a16.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Evalin was born in San Antonio, Texas, and has eight siblings. She is a big fan of the musical “Hamilton."
    },
    "12": {
          "name": "Jenn",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362491/6f3352fede1dbd6b6f1634c554871f3b/166x166-Q90_6f3352fede1dbd6b6f1634c554871f3b.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Jenn loves paddleboarding, Taylor Jenkins Reid’s book “The Seven Husbands of Evelyn Hugo” and Shawn Mendes’ music. She is bilingual."
    },
    "13": {
          "name": "Jess",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362515/bdda79724754e41d1edb66e86b292196/166x166-Q90_bdda79724754e41d1edb66e86b292196.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Jess is a big Swiftie and has a Yorkipoo named Charli. “I want to find someone that I can trust my heart with, someone who will respect me, and someone who will do anything to cherish our relationship,” she said."
    },
    "14": {
          "name": "Katelyn",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362576/14a66c5c15561525eb359088e53eac8c/166x166-Q90_14a66c5c15561525eb359088e53eac8c.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Katelyn purchased her first home at just 23 years old. She enjoys a Sarah J. Maas fantasy novel, visiting local cocktail bars and hiking."
    },
    "15": {
          "name": "Kayla",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362582/cc97aaeddc7e86cf64bc82b524b51478/166x166-Q90_cc97aaeddc7e86cf64bc82b524b51478.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Kayla was previously in a serious relationship for eight years. Now, she is hoping to find the man she can spend the rest of her life with. She likes to read “Harry Potter” books, watch “Schitt’s Creek” and spend time with her rescue animals."
    },
    "16": {
          "name": "Kelsey T.",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362600/724db8e0fda6a13e5699f7cc968bb780/166x166-Q90_724db8e0fda6a13e5699f7cc968bb780.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Kelsey T. was previously engaged and she wants to give love another chance. She enjoys playing beach volleyball and listening to Destiny’s Child."
    },
    "17": {
          "name": "Kyra",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362608/bbd18769e19f61942a398734da3a5d98/166x166-Q90_bbd18769e19f61942a398734da3a5d98.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Kyra likes going out to a bar or staying in for a quiet night at home playing Sims equally. She also likes going to the beach and comedy shows."
    },
    "18": {
          "name": "Lanie",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362614/3c08f4afcb9e2816e8d80bcd8f33241d/166x166-Q90_3c08f4afcb9e2816e8d80bcd8f33241d.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Lanie has a large Polish and Greek family and she would love to own a house in Greece. She wants a partner who likes to travel."
    },
    "19": {
          "name": "Lauren",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362618/ea9437fad00456c0f8bcf6802d12f9da/166x166-Q90_ea9437fad00456c0f8bcf6802d12f9da.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Lauren, like her sister Allison, is hoping that Joey is her soulmate. She enjoys working out and going to music festivals."
    },
    "20": {
          "name": "Lea",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362622/2facb01d9e9bbc8f475308c5c3933e58/166x166-Q90_2facb01d9e9bbc8f475308c5c3933e58.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "In case viewers forgot, Lea was the contestant that Joey met during “After the Final Rose” when he was announced as the next bachelor. She received a special envelope from Palmer that she will open on night one."
    },
    "21": {
          "name": "Lexi",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362628/b8df1b8af1b7dc1615b1ff10bcdf7b29/166x166-Q90_b8df1b8af1b7dc1615b1ff10bcdf7b29.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Lexi was accepted into an MBA summer program at MIT. As a child, she moved over 15 times. "
    },
    "22": {
          "name": "Madina",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362636/5e195207dc93bf388757cce280fd0e38/166x166-Q90_5e195207dc93bf388757cce280fd0e38.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Madina, who comes from a Bangladeshi family, likes to exercise, dance and watch “The Great British Bake Off.” To relax, she likes to brew a cup of tea and put on a face mask."
    },
    "23": {
          "name": "Marlena",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362659/e757fdeef9bebce993839a0a7c5660c8/166x166-Q90_e757fdeef9bebce993839a0a7c5660c8.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Marlena has a five-year plan that includes being married with two kids and a few rescue dogs. She is looking forward to becoming a soccer mom one day."
    },
    "24": {
          "name": "Nat",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362674/2a5fe05c901758aee25019a2992e2267/166x166-Q90_2a5fe05c901758aee25019a2992e2267.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Nat has a master’s degree. As a nurse, she prioritizes her health ... which means she sleeps for at least 12 hours every night."
    },
    "25": {
          "name": "Sam",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362694/79584baa688bac89bdda0cc67c09eebe/166x166-Q90_79584baa688bac89bdda0cc67c09eebe.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Sam used to live in New York before relocating to the South. She loves pizza and margaritas."
    },
    "26": {
          "name": "Samantha",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362702/5b690e89d3803d2731d659f7aec0b062/166x166-Q90_5b690e89d3803d2731d659f7aec0b062.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Samantha is a cheerleader for the Miami Dolphins and used to dress up as a princess at Disney World. She has competed in pageants."
    },
    "27": {
          "name": "Sandra",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362776/52852754a54ae540d8cbc2cef9e1760e/166x166-Q90_52852754a54ae540d8cbc2cef9e1760e.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Sandra hopes to start a family and become a mom soon. Right now, she enjoys watching “Suits,” traveling and football."
    },
    "28": {
          "name": "Starr",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362782/449fa9825f124fbc031a39c0d581f311/166x166-Q90_449fa9825f124fbc031a39c0d581f311.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Starr likes visiting new restaurants, picnics on the beach and running. She has Brazilian roots and says she can do an impression of Britney Spears."
    },
    "29": {
          "name": "Sydney",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362792/00f9f17106a2edacef3f8fbdb8cefe65/166x166-Q90_00f9f17106a2edacef3f8fbdb8cefe65.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "“I am so ready to find my forever person,” Sydney says, per her ABC bio. She is looking for someone who is adventurous and spontaneous. She used to teach English in Thailand."
    },
    "30": {
          "name": "Talyah",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362798/f4efb833a918980d7a192282fbc95300/166x166-Q90_f4efb833a918980d7a192282fbc95300.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Talyah is a fan of “Gossip Girl” and has a chihuahua named Lil Mama. She also doesn’t mind pickup lines."
    },
    "31": {
          "name": "Taylor",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362807/ae7a03e228b9da651096cbb75dfd2050/166x166-Q90_ae7a03e228b9da651096cbb75dfd2050.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Taylor likes hot yoga, ice skating and eating sushi. Like Jenn, she also enjoys reading Taylor Jenkins Reid books."
    },
    "32": {
          "name": "Zoe",
          "image": "https://cdn1.edgedatg.com/aws/v2/abc/TheBachelor/person/4362814/718fd13fc88b8df22d5b74885166ca6c/166x166-Q90_718fd13fc88b8df22d5b74885166ca6c.jpg",
-         "description": "This person is SUPER cool!"
+         "description": "Zoe is a sculptor, welder and photographer. Her dream date would be a night at a museum."
    }
 }
 
@@ -240,20 +263,20 @@ learn_pages = {
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/3"
-   }
+      "nextPage": "/envelope/1"
+   },
 }
 
 rose_pages = {
    "1": {
       "title": "Bracket",
-      "roses": 2,
-      "contestants": [1, 2, 3],
-      "description": "This is a description of Fantasy Suites. Hover over people for a description. Then give out your roses one by one.",
+      "roses": 4,
+      "contestants": list(range(1, 33)),
+      "description": "Your personal bracket! Choose your favorite contestants and find out what happens with them later!",
       "nextPage": "/learn/3",
-      "handbook_q": "TBD",
-      "handbook": "TBD",
-      "instructions": "Blah Blah", 
+      "handbook_q": "What is a bracket",
+      "handbook": "In the Bachelor Nation fandom, people will typically choose a number of contestants which they vouch for to win - even though this process takes place weekly, with points being added or subtracted depending on the standing of the contestants, we will only do one bracket at the start and will reveal your score at the end, for demonstration purposes!",
+      "instructions": "Hover over each girl to learn a little bit more about them", 
       "videos": main_vids["hometowns"]
    },
    "2": {
@@ -268,28 +291,61 @@ rose_pages = {
       "videos": main_vids["hometowns"]
    },
    "3": {
+      "title": "Group Dates",
+      "roses": 1,
+      "contestants": [1, 2, 3, 4, 5, 6, 7],
+      "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
+      "nextPage": "/envelope/2",
+      "handbook_q": "What is a group date?",
+      "handbook": "As it, sounds, a group date takes place when the bachelor chooses a set of girls he wants a group date with. He always excludes the contestant that was chosen for the 1-on-1 though, and does not include all the remaining women. Usually, the Bachelor will try to space it out so that if a woman is not chosen in one group date, she will be chosen on the next, but this is all up to the Bachelor’s discretion. In group dates, a group activity usually takes place, followed by a group cocktail party in which they can get some alone convo time with him. The bachelor can decide if he gives one or more roses - if a girl receives a rose, she will automatically have made it to the next round, and if not, she will have to wait for the rose ceremony to see if she will get a rose.",
+      "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
+      "videos": main_vids["group_date"]
+   },
+   "4": {
+      "title": "1-1 Dates",
+      "roses": 1,
+      "contestants": [2, 0],
+      "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
+      "nextPage": "/envelope/3",
+      "handbook_q": "What is a 1-1 Date?",
+      "handbook": "The bachelor usually selects a lucky contestant to go on the 1-on-1 date, and his date invitation is sent to the mansion, opened by all the women. In a 1-on-1 date, Joey and the lucky contestant will go on a romantic daytime date, planned by him, which always ends in a dinner date where the couple can really talk and open up to each other. Then the bachelor decides if he gives his date a rose or not, and if she does, she automatically makes it to the next round - she will not need to participate in the rose ceremony",
+      "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
+      "videos": main_vids["one_date"]
+   },
+   "5": {
+      "title": "2-1 Dates",
+      "roses": 1,
+      "contestants": [4, 29],
+      "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
+      "nextPage": "/rose/6",
+      "handbook_q": "What is a 2-on-1 date?",
+      "handbook": "It’s a special kind of date, in which two women are invited by the bachelor to go on a date together. They follow the same flow as the 1-on-1 date, where they have a day-time date, and then a dinner at night, in which a rose is handed out. The 2 -on-1 date is special because only 1 rose is handed out, and the woman who does not receive the rose has to immediately go home. She doesn't even get to go back to the mansion, as prior to the date, both women pack up their belongings so that when the Bachelor makes his decision, the rejected woman’s luggage is removed by staff. The 2-on-1 is used on rare occasion, and this season, it was arranged because there was drama between Maria and Sydney, and Joey needed to get to the bottom of it.",
+      "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
+      "videos": main_vids["two_date"]
+   },
+   "6": {
       "title": "Hometowns",
       "roses": 3,
       "contestants": [1, 2, 3, 4],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
-      "nextPage": "/rose/4",
+      "nextPage": "/rose/7",
       "handbook_q": "What are hometown visits?",
       "handbook": "Hometown visits are when the bachelor visits the hometown of each of the remaining 4 contestants and meets their families. This is a chance to see how well he blinds with the contestants’ families and for his bond with each contestant to get deeper and stronger. After all the hometown visits, Joey will eliminate 1 of the women in the rose ceremony, so stakes are high!",
       "instructions": "Click each girl to visit their hometown before choosing!",
       "videos": main_vids["hometowns"]
    },
-   "4": {
+   "7": {
       "title": "Fantasy Suites",
       "roses": 2,
       "contestants": [1, 2, 3],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
-      "nextPage": "/rose/5",
+      "nextPage": "/rose/8",
       "handbook_q": "What are Fantasy Suites?",
       "handbook": "The Fantasy Suites phase occurs toward the end of each season and takes place in a luxurious setting like a hotel suite or private accommodation. During this stage, the bachelor and the three remaining contestants are given the opportunity to spend private, overnight 1-on-1 dates together without cameras present - a great opportunity for them to deepen their conversations and connections, and discuss more personal matters before the next rose ceremony!",
       "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
       "videos": main_vids["fantasy_suites"]
    },
-   "5": {
+   "8": {
       "title": "Engagement",
       "roses": 1,
       "contestants": [1, 2],
@@ -299,6 +355,32 @@ rose_pages = {
       "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!",
       "instructions": "Who will be the lucky girl? Who will go home empty-handed?",
       "videos": main_vids["engagement"]
+   }
+}
+
+envelope_pages = {
+   "1": {
+   "text":  '''   Get in your tennis gear and join me for a group date!
+                  Love, Joey
+            ''',
+   "audio": "implement this last if we have time???",
+   "nextPage": "/rose/3"
+   },
+   "2": {
+      "text":  '''   Dear Daisy,
+                     I really enjoyed our time last night. Join me for a 1-on-1? 
+                     Love, Joey
+               ''',
+      "audio": "implement this last if we have time???",
+      "nextPage": "/rose/4"
+   },
+   "3": {
+      "text":  '''   To Maria, Jenn, Autumn, …, Kelsey A., 
+                     Get in your tennis gear and join me for a group date!
+                     Love, Joey
+               ''',
+      "audio": "implement this last if we have time???",
+      "nextPage": "/rose/5"
    }
 }
 
@@ -385,6 +467,12 @@ def learn(page_num):
    data = learn_pages[str(page_num)]
    return render_template('learn.html', data=data)
 
+@app.route('/envelope/<page_num>')
+def envelope(page_num):
+   global envelope_pages
+   data = envelope_pages[str(page_num)]
+   return render_template('envelope.html', data=data)
+
 @app.route('/quiz')
 def quiz_home():
    global correct
@@ -421,7 +509,7 @@ def quiz_handler():
 ############################################################
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = True, port=5001)
 
 
 
