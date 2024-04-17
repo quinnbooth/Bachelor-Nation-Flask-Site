@@ -351,9 +351,9 @@ quiz_pages = {
       "choices": ["Bachelorette is announced",
                   "Hometowns",
                   "Fantasy Suites",
-                  "Visiting Joey's family",
+                  "Meeting Joey's family",
                   "Joey gets engaged"],
-      "answer": [1, 2, 4, 3, 0]
+      "answer": [1, 2, 3, 4, 0]
    }
 }
 
