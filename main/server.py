@@ -360,7 +360,8 @@ rose_pages = {
 
 envelope_pages = {
    "1": {
-   "text":  '''   Get in your tennis gear and join me for a group date!
+   "text":  '''   To Maria, Jenn, Autumn, …, Kelsey A., 
+                  Get in your tennis gear and join me for a group date!
                   Love, Joey
             ''',
    "audio": "implement this last if we have time???",
@@ -375,8 +376,8 @@ envelope_pages = {
       "nextPage": "/rose/4"
    },
    "3": {
-      "text":  '''   To Maria, Jenn, Autumn, …, Kelsey A., 
-                     Get in your tennis gear and join me for a group date!
+      "text":  '''   To Maria and Sydney, 
+                     I would love to clear the air, join me for a 2-on-1?
                      Love, Joey
                ''',
       "audio": "implement this last if we have time???",
