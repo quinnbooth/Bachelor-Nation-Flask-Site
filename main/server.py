@@ -336,23 +336,24 @@ quiz_pages = {
    },
    "5": {
       "questionId": "5",
-      "question": "Question here?",
+      "question": "In the engagement ceremony, the bachelor may:",
       "questionType": "mult_select",
-      "choices": ["blah",
-                  "blah",
-                  "blah",
-                  "blah"],
+      "choices": ["Leave the show unmarried",
+                  "Only leave the show married",
+                  "Not choose any of the girls",
+                  "Choose both of the finalists"],
       "answer": [0, 2, 3]
    },
    "6": {
       "questionId": "6",
       "question": "Question here?",
       "questionType": "sort",
-      "choices": ["blah",
-                  "blah",
-                  "blah",
-                  "blah"],
-      "answer": [0, 1, 2, 3, 4]
+      "choices": ["Bachelorette is announced",
+                  "Hometowns",
+                  "Fantasy Suites",
+                  "Visiting Joey's family",
+                  "Joey gets engaged"],
+      "answer": [3, 1, 2, 0, 4]
    }
 }
 
