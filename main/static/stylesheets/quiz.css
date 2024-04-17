@@ -10,7 +10,7 @@
   background-color: #b6d7a8;
 }
 
-#quizContainer {
+#quizQuestions {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
