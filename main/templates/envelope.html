@@ -2,15 +2,17 @@
 
 {% block content %}
 
-<p id="letter"> Gasp! An envelope has arrived! </p>
+<script>
+    let data = {{data|tojson}};
+</script>
 
 <div id="envelope-container" class="envelope-closed">
     <div id="front-envelope" class="front">
-        <p id="font">Click to open</p>
+        <p id="click-text">Click to open</p>
     </div>
     <div id="back-envelope" class="back"></div>
-    <div id="text_container" class="letter">
-        <p id="letter-content font">Content from the server will appear here...</p>
+    <div id="letter" class="letter">
+        <p id="letter-content">{{ data['text'] }}</p> <!-- Use the 'text' from data directly here -->
     </div> 
 </div>
 <button id="nextButton">Next</button>

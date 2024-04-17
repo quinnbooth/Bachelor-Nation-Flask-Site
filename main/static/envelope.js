@@ -1,17 +1,26 @@
 $(document).ready(function() {
     var $envelope = $('#envelope-container');
-    var $letterContent = $('#letter-content');
     var $nextButton = $('#nextButton');
+    var $envelopeContainer = $('#envelope-container');
+    var $clickText = $('#click-text');
+    var $letter = $('#letter');
 
     $nextButton.click(function(event) {
         window.location.href = data['nextPage'];
     });
 
     $envelope.on('click', function() {
-        
-        $letterContent.text("Get in your tennis gear and join me for a group date! Love, Joey");
-        $nextButton.show();
-
+        $letter.toggle();
         $envelope.toggleClass('envelope-open envelope-closed');
+        if ($envelope.hasClass('envelope-open')) {
+            $clickText.hide(); 
+            $nextButton.show(); 
+        } else {
+            $clickText.show(); 
+            $nextButton.hide(); 
+        }
+    });
+    $envelopeContainer.click(function() {
+        $(this).css('z-index', 10);  // Bring to front when clicked
     });
 });

@@ -348,7 +348,7 @@ rose_pages = {
    "8": {
       "title": "Engagement",
       "roses": 1,
-      "contestants": [1, 2],
+      "contestants": [1, 2, 0],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/quiz",
       "handbook_q": "What happens in the engagement ceremony?",
