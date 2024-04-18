@@ -1,12 +1,24 @@
-body {
-    background-color: white;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .learnContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 80px) !important;
+    background-color: white;
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /* overflow-y: scroll; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 1px solid black;
 }
 
 .speakerImage {
@@ -15,7 +27,18 @@ body {
     flex-direction: column;
 }
 
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: -1;
+}
+
 .speakerImage img {
+    margin-top: 35px;
     height: 30vh;
     width: auto;
     border-radius: 5px;
@@ -30,30 +53,45 @@ body {
     position: relative;
     white-space: pre-line;
     text-align: center;
+    border: 3px solid black;
 }
 
 .dialogueBox::after {
     content: '';
     position: absolute;
-    bottom: -15px;
-    left: 90%;
+    bottom: -14px;
+    left: 60%;
     transform: translateX(-50%);
     border-width: 15px 15px 0;
     border-style: solid;
     border-color: #f0f0f0 transparent transparent;
 }
 
+.dialogueBox::before {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 60%;
+    transform: translateX(-50%);
+    border-width: 17px 17px 0; 
+    border-style: solid;
+    border-color: black transparent transparent;
+}
+
 #dialogueText {
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.3vw;
     margin: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.3;
 }
 
 #nextButton {
     position: absolute;
-    right: 5%;
+    right: 23%;
     bottom: 5%;
-    background-color: #750000;
+    background-color: #920000;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;

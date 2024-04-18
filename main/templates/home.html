@@ -1,19 +1,53 @@
-{% extends "layout.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
 
-{% block content %}
+    <!-- Fonts and main CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/main.css')}}">
 
-<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
-<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/home.css')}}">
+    <!-- jQuery (required for jQuery UI) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-<div id="petalsContainer">
-    <div class="blackBarTop"></div>
-    <iframe id="petalsVideo" width="1280" height="720" src="https://www.youtube.com/embed/CGGdFuG0fg4?autoplay=1&loop=1&playlist=CGGdFuG0fg4&controls=0&mute=1&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
-    <div class="blackBarBottom"></div>
-    <div class="titleOverlay">
-        <span class="bachelor">Bachelor</span>
-        <span class="nation">Nation</span>
+    <!-- jQuery UI and its CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>  
+
+    <!-- Bootstrap CSS and JS (Bootstrap 5, using bundle which includes Popper) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../static/layout.js"></script>
+
+    <title>Bachelor Nation</title>
+  </head>
+  <body>
+
+    <div class="container">   
+
+        <script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/home.css')}}">
+        
+        <div id="petalsContainer">
+            <div class="blackBarTop"></div>
+            <iframe id="petalsVideo" width="1280" height="720" src="https://www.youtube.com/embed/CGGdFuG0fg4?autoplay=1&loop=1&playlist=CGGdFuG0fg4&controls=0&mute=1&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <div class="blackBarBottom"></div>
+            <div class="titleOverlay">
+                <span class="bachelor">Bachelor</span>
+                <span class="nation">Nation</span>
+            </div>
+            <div id="homeDescription">Learn how The Bachelor works throughout<br>this interactive experience.</div>
+            <button id="learnButton">Start</button>
+        </div>
+        
+
     </div>
-    <button id="learnButton">Learn How It Works</button>
-</div>
 
-{% endblock %}
+  </body>
+</html>
+

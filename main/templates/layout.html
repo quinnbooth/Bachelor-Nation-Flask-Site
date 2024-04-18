@@ -9,7 +9,7 @@
     <!-- Fonts and main CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/layout.css')}}">
 
     <!-- jQuery (required for jQuery UI) -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -28,11 +28,11 @@
   </head>
   <body>
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="/">Bachelor Nation</a>
+        <a class="navbar-brand" href="/">Add timeline element up here...</a>
       </div>
-    </nav> -->
+    </nav>
 
     <div class="container">   
         {% block content %}

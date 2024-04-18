@@ -9,16 +9,22 @@
     let data = {{data|tojson}};
 </script>
 
-<div class="learnContainer">
-    <div class="dialogueBox">
-        <p id="dialogueText">{{ data['text'] }}</p>
+<div class="row" >
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="learnContainer">
+            <div class="dialogueBox">
+                <p id="dialogueText">{{ data.text | safe }}</p>
+            </div>
+            <div class="speakerImage">
+                <img src="{{ data['speakerImage'] }}" alt="{{ data['speakerName'] }}">
+                <b>{{ data['speakerName'] }}</b>
+            </div>
+            <button id="nextButton">Continue</button>
+        </div>  
     </div>
-    <div class="speakerImage">
-        <img src="{{ data['speakerImage'] }}" alt="{{ data['speakerName'] }}">
-        {{ data['speakerName'] }}
-    </div>
-    <button id="nextButton">Next</button>
-</div>              
+    <div class="col-1"></div>
+</div>
 
 
 {% endblock %}

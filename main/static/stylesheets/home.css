@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/precious');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #petalsContainer {
@@ -76,18 +76,35 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50%;
+    width: 10vw;
+    text-align: center;
+    top: 60vh;
+    margin-top: 10px;
     background-color: #750000;
     color: white;
     font-family: 'Pacifico';
     font-size: 1.5vw;
-    padding: 15px 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     animation: fadeButton 4s ease forwards;
     z-index: 9999;
+}
+
+#homeDescription {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 48%;
+    color: rgb(133, 133, 133);
+    z-index: 99999;
+    width: 100%;
+    font-size: 1.5vw;
+    animation: fadeButton 4s ease forwards;
 }
 
 #learnButton:hover {
@@ -109,5 +126,5 @@ body {
     0% { opacity: 0; }
     33% { opacity: 0; }
     66% { opacity: 0; }
-    100% { opacity: 1; }
+    100% { opacity: 0.9; }
 }

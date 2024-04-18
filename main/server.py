@@ -218,37 +218,35 @@ people_list = {
 
 learn_pages = {
    "1": {
-      "text":  '''   Welcome to The Bachelor!\n
-                     I’m your host Jesse Palmer, and in this show, we will help our Bachelor, Joey, find (and possibly marry) his true love over the course of 11 weeks!\n
+      "text":  '''   Welcome to <b>The Bachelor!</b>\n
+                     I’m your host <i>Jesse Palmer</i>, and in this show, we will help our Bachelor, Joey, find (and possibly marry) his true love over the course of 11 weeks!\n
                      For this, we have selected 32 lucky girls who Joey will have the opportunity to interact with, and choose among as the weeks go by until we are left with 2 special finalists!\n
                      Let’s go ahead and start!
                ''',
-      "textMedia": "",
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/learn/2"
    },
    "2": {
-      "text":  '''   Hey there! I'm Joey, a 28-year-old tennis coach living the dream in Hawaii. A couple of things about me:\n\n
+      "text":  '''   Hey there! I'm <b>Joey</b>, a 28-year-old tennis coach living the dream in Hawaii. A couple of things about me:\n
                      * Big fan of keeping things chill—drama isn't my game.\n
                      * I'm all about kindness and positive vibes.\n
-                     * My biggest fear? Choosing someone who wouldn't choose me back.\n
-                     * Sometimes I feel the pressure to be perfect, but I'm working on embracing the imperfections.\n
-                     * I'm on the lookout for that soulmate connection, hoping to find my forever partner.
+                     * My biggest fear? Choosing someone who wouldn't choose me back.
                ''',
-      "textMedia": "",
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
       "speakerImage": main_images["bachelor"],
       "speakerName": "Joey",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/1" # should lead to bracket  
+      "nextPage": "/rose/1"  
    },
    "3": {
       "text":  '''   Welcome to the First Week, specifically the First Night!
                      Tonight, each woman will make their “limousine entrance” and meet Joey for the first time.
                      Then, a cocktail party inside the Bachelor Mansion will give the women a chance to talk to Joey 1-on-1. Before the night is over, Joey will have his first rose ceremony of the season.)
                ''',
-      "textMedia": "",
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
@@ -260,7 +258,7 @@ learn_pages = {
                      We’ll always end each night with a rose ceremony of course. We’ll even be traveling the world for these dates! 
                      And finally, we’ll get down to 4 contestants and get ready for hometowns.
                ''',
-      "textMedia": "",
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
