@@ -2,6 +2,9 @@
 
 {% block content %}
 
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/envelope.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename='envelope.js') }}"></script>
+
 <script>
     let data = {{data|tojson}};
 </script>
@@ -16,8 +19,5 @@
     </div> 
 </div>
 <button id="nextButton">Next</button>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/envelope.css') }}">
-<script type="text/javascript" src="{{ url_for('static', filename='envelope.js') }}"></script>
 
 {% endblock %}

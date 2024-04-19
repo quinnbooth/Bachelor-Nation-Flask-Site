@@ -227,7 +227,8 @@ learn_pages = {
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/learn/2"
+      "nextPage": "/learn/2",
+      "timeline": 1
    },
    "2": {
       "text":  '''   Hey there! I'm <b>Joey</b>, a 28-year-old tennis coach living the dream in Hawaii. A couple of things about me:\n
@@ -239,18 +240,20 @@ learn_pages = {
       "speakerImage": main_images["bachelor"],
       "speakerName": "Joey",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/1"  
+      "nextPage": "/learn/3",
+      "timeline": 1  
    },
    "3": {
       "text":  '''   Welcome to the First Week, specifically the First Night!
                      Tonight, each woman will make their “limousine entrance” and meet Joey for the first time.
                      Then, a cocktail party inside the Bachelor Mansion will give the women a chance to talk to Joey 1-on-1. Before the night is over, Joey will have his first rose ceremony of the season.)
                ''',
-      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
+      "backgroundImg": "https://decider.com/wp-content/uploads/2022/07/LIMO-FEATURE-IMAGE-ENTRANCE.jpg?quality=80&strip=all",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/2"
+      "nextPage": "/rose/2",
+      "timeline": 2
    },
    "4": {
       "text":  '''   The first week is over!
@@ -258,11 +261,12 @@ learn_pages = {
                      We’ll always end each night with a rose ceremony of course. We’ll even be traveling the world for these dates! 
                      And finally, we’ll get down to 4 contestants and get ready for hometowns.
                ''',
-      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
+      "backgroundImg": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/envelope/1"
+      "nextPage": "/envelope/1",
+      "timeline": 3
    },
 }
 
@@ -287,7 +291,8 @@ rose_pages = {
       "handbook_q": "What are Limousine Entrances?",
       "handbook": "Limousine Entrances are when the contestants meet Joey for the first time! Each woman gets to exit the limo (or whichever vessel they choose) and meet Joey one-on-one, usually introducing herself with a prop that’s significant to her, or her background. It’s important to make a good and lasting impression!",
       "instructions": "Before the roses, click on a girl to check out her limousine entrance!",
-      "videos": main_vids["hometowns"]
+      "videos": main_vids["hometowns"],
+      "timeline": 2
    },
    "3": {
       "title": "Group Dates",
@@ -298,7 +303,8 @@ rose_pages = {
       "handbook_q": "What is a group date?",
       "handbook": "As it, sounds, a group date takes place when the bachelor chooses a set of girls he wants a group date with. He always excludes the contestant that was chosen for the 1-on-1 though, and does not include all the remaining women. Usually, the Bachelor will try to space it out so that if a woman is not chosen in one group date, she will be chosen on the next, but this is all up to the Bachelor’s discretion. In group dates, a group activity usually takes place, followed by a group cocktail party in which they can get some alone convo time with him. The bachelor can decide if he gives one or more roses - if a girl receives a rose, she will automatically have made it to the next round, and if not, she will have to wait for the rose ceremony to see if she will get a rose.",
       "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
-      "videos": main_vids["group_date"]
+      "videos": main_vids["group_date"],
+      "timeline": 3
    },
    "4": {
       "title": "1-1 Dates",
@@ -309,7 +315,8 @@ rose_pages = {
       "handbook_q": "What is a 1-1 Date?",
       "handbook": "The bachelor usually selects a lucky contestant to go on the 1-on-1 date, and his date invitation is sent to the mansion, opened by all the women. In a 1-on-1 date, Joey and the lucky contestant will go on a romantic daytime date, planned by him, which always ends in a dinner date where the couple can really talk and open up to each other. Then the bachelor decides if he gives his date a rose or not, and if she does, she automatically makes it to the next round - she will not need to participate in the rose ceremony",
       "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
-      "videos": main_vids["one_date"]
+      "videos": main_vids["one_date"],
+      "timeline": 4
    },
    "5": {
       "title": "2-1 Dates",
@@ -320,7 +327,8 @@ rose_pages = {
       "handbook_q": "What is a 2-on-1 date?",
       "handbook": "It’s a special kind of date, in which two women are invited by the bachelor to go on a date together. They follow the same flow as the 1-on-1 date, where they have a day-time date, and then a dinner at night, in which a rose is handed out. The 2 -on-1 date is special because only 1 rose is handed out, and the woman who does not receive the rose has to immediately go home. She doesn't even get to go back to the mansion, as prior to the date, both women pack up their belongings so that when the Bachelor makes his decision, the rejected woman’s luggage is removed by staff. The 2-on-1 is used on rare occasion, and this season, it was arranged because there was drama between Maria and Sydney, and Joey needed to get to the bottom of it.",
       "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
-      "videos": main_vids["two_date"]
+      "videos": main_vids["two_date"],
+      "timeline": 5
    },
    "6": {
       "title": "Hometowns",
@@ -331,7 +339,8 @@ rose_pages = {
       "handbook_q": "What are hometown visits?",
       "handbook": "Hometown visits are when the bachelor visits the hometown of each of the remaining 4 contestants and meets their families. This is a chance to see how well he blinds with the contestants’ families and for his bond with each contestant to get deeper and stronger. After all the hometown visits, Joey will eliminate 1 of the women in the rose ceremony, so stakes are high!",
       "instructions": "Click each girl to visit their hometown before choosing!",
-      "videos": main_vids["hometowns"]
+      "videos": main_vids["hometowns"],
+      "timeline": 6
    },
    "7": {
       "title": "Fantasy Suites",
@@ -342,7 +351,8 @@ rose_pages = {
       "handbook_q": "What are Fantasy Suites?",
       "handbook": "The Fantasy Suites phase occurs toward the end of each season and takes place in a luxurious setting like a hotel suite or private accommodation. During this stage, the bachelor and the three remaining contestants are given the opportunity to spend private, overnight 1-on-1 dates together without cameras present - a great opportunity for them to deepen their conversations and connections, and discuss more personal matters before the next rose ceremony!",
       "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
-      "videos": main_vids["fantasy_suites"]
+      "videos": main_vids["fantasy_suites"],
+      "timeline": 7
    },
    "8": {
       "title": "Engagement",
@@ -353,7 +363,8 @@ rose_pages = {
       "handbook_q": "What happens in the engagement ceremony?",
       "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!",
       "instructions": "Who will be the lucky girl? Who will go home empty-handed?",
-      "videos": main_vids["engagement"]
+      "videos": main_vids["engagement"],
+      "timeline": 8
    }
 }
 
@@ -364,7 +375,8 @@ envelope_pages = {
                   Love, Joey
             ''',
    "audio": "implement this last if we have time???",
-   "nextPage": "/rose/3"
+   "nextPage": "/rose/3",
+   "timeline": 3
    },
    "2": {
       "text":  '''   Dear Daisy,
@@ -372,7 +384,8 @@ envelope_pages = {
                      Love, Joey
                ''',
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/4"
+      "nextPage": "/rose/4",
+      "timeline": 4
    },
    "3": {
       "text":  '''   To Maria and Sydney, 
@@ -380,7 +393,8 @@ envelope_pages = {
                      Love, Joey
                ''',
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/5"
+      "nextPage": "/rose/5",
+      "timeline": 5
    }
 }
 
@@ -393,28 +407,32 @@ quiz_pages = {
                   "She joins the group date that Joey goes on next",
                   "She is sent home, but first she gets to say her goodbyes to the girls",
                   "She is sent home immediately"],
-      "answer": [3]
+      "answer": [3],
+      "timeline": 9
    },
    "2": {
       "questionId": "2",
       "question": "Question here?",
       "questionType": "fill_blank",
       "choices": [],
-      "answer": ["answer here"]
+      "answer": ["answer here"],
+      "timeline": 9
    },
    "3": {
       "questionId": "3",
       "question": "A contestant can leave anytime she wants to.",
       "questionType": "true_false",
       "choices": [],
-      "answer": ["true"]
+      "answer": ["true"],
+      "timeline": 9
    },
    "4": {
       "questionId": "4",
       "question": "The last ceremony doesn’t involve a rose at all.",
       "questionType": "true_false",
       "choices": [],
-      "answer": ["true"]
+      "answer": ["true"],
+      "timeline": 9
    },
    "5": {
       "questionId": "5",
@@ -424,7 +442,8 @@ quiz_pages = {
                   "Only leave the show married",
                   "Not choose any of the girls",
                   "Choose both of the finalists"],
-      "answer": [0, 2, 3]
+      "answer": [0, 2, 3],
+      "timeline": 9
    },
    "6": {
       "questionId": "6",
@@ -435,7 +454,8 @@ quiz_pages = {
                   "Fantasy Suites",
                   "Meeting Joey's family",
                   "Joey gets engaged"],
-      "answer": [1, 2, 3, 4, 0]
+      "answer": [1, 2, 3, 4, 0],
+      "timeline": 9
    }
 }
 
@@ -488,7 +508,8 @@ def quiz_home():
    global incorrect
    data = {
       "correct": correct,
-      "incorrect": incorrect
+      "incorrect": incorrect,
+      "timeline": 9
    }
    return render_template('quiz_home.html', data=data)
 

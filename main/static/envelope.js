@@ -1,6 +1,8 @@
 $(document).ready(function() {
+
     var $envelope = $('#envelope-container');
     var $nextButton = $('#nextButton');
+    $nextButton.hide(); 
     var $envelopeContainer = $('#envelope-container');
     var $clickText = $('#click-text');
     var $letter = $('#letter');
