@@ -18,10 +18,10 @@ $("#document").ready(function () {
       $(`#question${i}`).addClass("incorrect");
     } else {
       $(`#question${i}`).addClass("unanswered");
-      $(`#question${i}`).on("click", function () {
-        window.location.href = `/quiz/${i}`;
-      });
     }
+    $(`#question${i}`).on("click", function () {
+      window.location.href = `/quiz/${i}`;
+    });
   }
   $(".unanswered").hover(function () {
     $(this).css("background-color", "#f7b776");

@@ -1,10 +1,17 @@
 let current_choice = null;
+let answered = false;
 
 // The plan is to have this function be the main function
 // that checks what type of question it is. Then it will
 // call the corresponding helper function to render
 // the page.
 $("#document").ready(function () {
+  if (
+    correct.includes(data.questionId) ||
+    incorrect.includes(data.questionId)
+  ) {
+    answered = true;
+  }
   if (data.questionType === "mult_choice") {
     multChoiceHandler(data.choices, data.answer[0]);
   } else if (data.questionType === "true_false") {
@@ -44,21 +51,22 @@ function multChoiceHandler(choices, answer) {
   $(".quizChoice").on("click", function () {
     makeSelection($(this));
   });
-
-  $("#quizSubmit").on("click", function () {
-    let id = current_choice.attr("id");
-    if (id.charAt(id.length - 1) === answer.toString()) {
-      submitHandler({
-        isCorrect: true,
-        id: data.questionId,
-      });
-    } else {
-      submitHandler({
-        isCorrect: false,
-        id: data.questionId,
-      });
-    }
-  });
+  if (!answered) {
+    $("#quizSubmit").on("click", function () {
+      let id = current_choice.attr("id");
+      if (id.charAt(id.length - 1) === answer.toString()) {
+        submitHandler({
+          isCorrect: true,
+          id: data.questionId,
+        });
+      } else {
+        submitHandler({
+          isCorrect: false,
+          id: data.questionId,
+        });
+      }
+    });
+  }
 }
 
 function trueFalseHandler(answer) {
@@ -87,20 +95,22 @@ function trueFalseHandler(answer) {
     makeSelection($(this));
   });
 
-  $("#quizSubmit").on("click", function () {
-    let id = current_choice.attr("id");
-    if (id === answer.toString()) {
-      submitHandler({
-        isCorrect: true,
-        id: data.questionId,
-      });
-    } else {
-      submitHandler({
-        isCorrect: false,
-        id: data.questionId,
-      });
-    }
-  });
+  if (!answered) {
+    $("#quizSubmit").on("click", function () {
+      let id = current_choice.attr("id");
+      if (id === answer.toString()) {
+        submitHandler({
+          isCorrect: true,
+          id: data.questionId,
+        });
+      } else {
+        submitHandler({
+          isCorrect: false,
+          id: data.questionId,
+        });
+      }
+    });
+  }
 }
 
 function fillBlankHandler(answer) {
@@ -115,20 +125,22 @@ function fillBlankHandler(answer) {
     `
   );
 
-  $("#quizSubmit").on("click", function () {
-    let guess = $("#fillAnswer").val();
-    if (guess.toLowerCase() === answer.toString().toLowerCase()) {
-      submitHandler({
-        isCorrect: true,
-        id: data.questionId,
-      });
-    } else {
-      submitHandler({
-        isCorrect: false,
-        id: data.questionId,
-      });
-    }
-  });
+  if (!answered) {
+    $("#quizSubmit").on("click", function () {
+      let guess = $("#fillAnswer").val();
+      if (guess.toLowerCase() === answer.toString().toLowerCase()) {
+        submitHandler({
+          isCorrect: true,
+          id: data.questionId,
+        });
+      } else {
+        submitHandler({
+          isCorrect: false,
+          id: data.questionId,
+        });
+      }
+    });
+  }
 }
 
 function multSelectHandler(choices, answer) {
@@ -152,33 +164,35 @@ function multSelectHandler(choices, answer) {
     $(this).css("background-color", "lightgray");
   });
 
-  $("#quizSubmit").on("click", function () {
-    let guesses = [];
+  if (!answered) {
+    $("#quizSubmit").on("click", function () {
+      let guesses = [];
 
-    for (let i = 0; i < choices.length; i++) {
-      if ($(`#choice${i}`).prop("checked")) {
-        guesses.push(1);
-      } else {
-        guesses.push(0);
+      for (let i = 0; i < choices.length; i++) {
+        if ($(`#choice${i}`).prop("checked")) {
+          guesses.push(1);
+        } else {
+          guesses.push(0);
+        }
       }
-    }
 
-    for (let i = 0; i < answer.length; i++) {
-      guesses[answer[i]]--;
-    }
+      for (let i = 0; i < answer.length; i++) {
+        guesses[answer[i]]--;
+      }
 
-    if (guesses.every((element) => element === 0)) {
-      submitHandler({
-        isCorrect: true,
-        id: data.questionId,
-      });
-    } else {
-      submitHandler({
-        isCorrect: false,
-        id: data.questionId,
-      });
-    }
-  });
+      if (guesses.every((element) => element === 0)) {
+        submitHandler({
+          isCorrect: true,
+          id: data.questionId,
+        });
+      } else {
+        submitHandler({
+          isCorrect: false,
+          id: data.questionId,
+        });
+      }
+    });
+  }
 }
 
 function sortHandler(choices, answer) {
@@ -226,25 +240,27 @@ function sortHandler(choices, answer) {
     });
   });
 
-  $("#quizSubmit").on("click", function () {
-    let succeed = true;
-    for (let i = 0; i < current_choice.length; i++) {
-      if (current_choice[i] !== answer[i]) {
-        succeed = false;
+  if (!answered) {
+    $("#quizSubmit").on("click", function () {
+      let succeed = true;
+      for (let i = 0; i < current_choice.length; i++) {
+        if (current_choice[i] !== answer[i]) {
+          succeed = false;
+          submitHandler({
+            isCorrect: false,
+            id: data.questionId,
+          });
+          break;
+        }
+      }
+      if (succeed) {
         submitHandler({
-          isCorrect: false,
+          isCorrect: true,
           id: data.questionId,
         });
-        break;
       }
-    }
-    if (succeed) {
-      submitHandler({
-        isCorrect: true,
-        id: data.questionId,
-      });
-    }
-  });
+    });
+  }
 }
 
 // Keeps track of which choice was selected and prevents users from

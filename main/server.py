@@ -517,7 +517,9 @@ def quiz_home():
 def quiz(page_num):
    global quiz_pages
    data = quiz_pages[str(page_num)]
-   return render_template('quiz.html', data=data)   
+   global correct
+   global incorrect
+   return render_template('quiz.html', data=data, correct=correct, incorrect=incorrect)   
 
 #####################  AJAX FUNCTIONS  #####################
 
