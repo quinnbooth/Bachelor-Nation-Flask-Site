@@ -38,36 +38,45 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-12">
-        <div id="contestantRow"></div>
-    </div>
+<div class="col-2 text-end">
+    <div class = "row mt-5">
+        <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal">
+            Try the rose ceremony! 
+        </button>
+    </div>  
 </div>
-<div class="row">
-    <div class = "col-2"></div>
-    <div class="col-8 text-center">
-        <div class = "row">
-            <div id="roseRow"></div>
+
+<!-- Handbook Modal-->
+<div class="modal fade" id="handbookModal" tabindex="-1" aria-labelledby="handbookModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="handbookModalLabel">Handbook</h5>
+                <!-- Close button with Bootstrap 5 data attribute -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="contestantRow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-2"></div>
+                    <div class="col-8 text-center">
+                        <div class = "row">
+                            <div id="roseRow"></div>
+                        </div>
+                        <div class = "row">
+                            <div id="rosesLeft"></div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class = "row">
-            <div id="rosesLeft"></div>
-        </div>        
-    </div>
-    <div class="col-2 text-end">
-        <div class = "row mt-5">
-            <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal">
-                Handbook
-            </button>
-        </div>  
     </div>
 </div>
-
-
-<!-- <div class="row">
-    
-</div> -->
-
-
 
 <!-- Date Modal -->
 <div class="modal fade" id="profileVideoModal" tabindex="-1" aria-labelledby="profileVideoModalLabel" aria-hidden="true">
@@ -85,22 +94,6 @@
 </div>
 
 
-<!-- Handbook Modal-->
-<div class="modal fade" id="handbookModal" tabindex="-1" aria-labelledby="handbookModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="handbookModalLabel">Handbook</h5>
-                <!-- Close button with Bootstrap 5 data attribute -->
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h5>{{ data.handbook_q | safe }}</h5>
-                {{ data.handbook | safe }}
-            </div>
-        </div>
-    </div>
-</div>
+
 
 {% endblock %}
