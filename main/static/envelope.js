@@ -2,27 +2,26 @@ $(document).ready(function() {
 
     var $envelope = $('#envelope-container');
     var $nextButton = $('#nextButton');
-    $nextButton.hide(); 
-    var $envelopeContainer = $('#envelope-container');
     var $clickText = $('#click-text');
     var $letter = $('#letter');
+
+    $nextButton.hide();
 
     $nextButton.click(function(event) {
         window.location.href = data['nextPage'];
     });
 
-    $envelope.on('click', function() {
-        $letter.toggleClass('letter-off');
+    $envelope.click(function() {
+        $letter.toggleClass('letter-off'); 
         $envelope.toggleClass('envelope-open envelope-closed');
         if ($envelope.hasClass('envelope-open')) {
-            $clickText.hide(); 
-            $nextButton.show(); 
+            $clickText.hide();
+            $nextButton.show();
+            $letter.slideDown(500);
         } else {
-            $clickText.show(); 
-            $nextButton.hide(); 
+            $clickText.show();
+            $nextButton.hide();
+            $letter.slideUp(500);
         }
-    });
-    $envelopeContainer.click(function() {
-        $(this).css('z-index', 10);  // Bring to front when clicked
     });
 });

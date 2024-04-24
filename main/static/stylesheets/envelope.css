@@ -1,42 +1,87 @@
-body, html {
+html, body {
     height: 100%;
     margin: 0;
-    /* display: flex; */
+    padding: 0;
+    overflow: hidden;
+    background: no-repeat center/cover url('https://snworksceo.imgix.net/jhn/85697b6d-9900-45f1-96f3-c42414878f0e.sized-1000x1000.jpg?w=1000');
+}
+
+.backgroundImage {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7;
+    height: 100vh;
+    padding: 20px; /* Optional padding to keep contents within a central area */
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1250px;
+    width: 2250px;
+    background-color: white;
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 1px solid black;
+}
+
+.letter {
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    width: 300px; /* fill the entire front flap */
+    height: 250px; /* adjust height accordingly */
+    top: 0; /* position it right at the top */
+    left: 0;
+    z-index: 3;
+    background-color: transparent; /* match the front flap color */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 24px;
+    display: none; /* Initially hidden */
+}
+
+.envelope-open .letter {
+    display: block;
+    animation: slide-up 0.5s forwards; /* Animation to slide the letter up */
+}
+
+@keyframes slide-up {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
 }
 
 #envelope-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(233, 233, 157);
-    width: 300px;
-    height: 200px;
+    position: relative;
+    width: 500px;
+    height: 320px; /* Adjust size based on your needs */
     cursor: pointer;
-    z-index: 1; /* Stacking order */
+    margin: 20px auto;
+    background-color: transparent; /* Ensures that the envelope's background is transparent */
+    z-index: 2;
 }
 
 .front, .back {
     position: absolute;
     width: 100%;
-    height: 100%; 
-    background-color: #fff;
-    border: 1px solid #000;
-    border: 1px solid #000;
-    z-index: 0; /* Stacking order */
+    height: 100%;
+    background-color: #920000;
+    z-index: 2;
 }
 
 .front {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
-    z-index: 2; /* Stacking order */
+    transition: transform 0.5s ease; /* Animation for the front flap */
 }
 
 .back {
     clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
-    z-index: 1; /* Stacking order */
+    z-index: 1;
 }
 
 .font {
@@ -47,13 +92,13 @@ body, html {
 
 .letter {
     font-family: 'Dancing Script', cursive;
-    position: absolute;
-    width: calc(100% - 4px);
-    height: calc(85% - 4px);
+    position: center;
+    width: calc(100% - 10px);
+    height: calc(85% - 10px);
     top: 15%;
     left: 2px;
-    z-index: 2; /* Stacking order */
-    background-color: #f7f7f7;
+    z-index: 2;
+    background-color: #ee7e7e;
     border: 1px solid #000;
     transform: scaleY(1);
     transform-origin: top;
@@ -62,7 +107,6 @@ body, html {
     box-sizing: border-box;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 24px;
     z-index: 999;
 }
 
@@ -72,22 +116,26 @@ body, html {
 
 #letter-content {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
+    padding: 20px;
     transition: opacity 0.5s ease, z-index 0s 0.5s;
     z-index: 9999;
+    text-align: left;
 }
 
-
-
 .envelope-open .front {
-    transform: translateY(-100%);
+    transform: translateY(-100%); /* Slide the front flap up */
+}
+
+.envelope-open .letter {
+    display: block; /* Make the letter visible when envelope is open */
 }
 
 #nextButton {
-    position: absolute;
-    right: 5%;
+    position: center;
+    right: 23%;
     bottom: 5%;
-    background-color: #750000;
+    background-color: #920000;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -104,6 +152,11 @@ body, html {
 
 #click-text {
     position: absolute;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 70px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
     top: 10px; 
     left: 50%;
     transform: translateX(-50%);

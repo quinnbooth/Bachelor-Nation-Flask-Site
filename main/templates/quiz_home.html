@@ -1,21 +1,26 @@
 {% extends "layout.html" %} {% block content %}
 
-<script
-  type="text/javascript"
-  src="{{ url_for('static', filename = 'quiz_home.js') }}"
-></script>
 <link
   rel="stylesheet"
   href="{{url_for('static', filename='stylesheets/quiz.css')}}"
 />
 
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'quiz_home.js') }}"
+></script>
+
 <script>
   let data = {{data|tojson}};
 </script>
 
-<div id="quizModal">
-  <h2>Surprise Pop Quiz!</h2>
-  <div id="quizContainer"></div>
+<div class="backgroundImage">
+    <div class="contentBox">
+        <div id="quizModal">
+            <h2>Surprise Pop Quiz!</h2>
+            <div id="quizContainer"></div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

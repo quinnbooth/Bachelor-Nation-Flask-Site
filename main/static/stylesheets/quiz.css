@@ -1,13 +1,51 @@
 .unanswered {
-  background-color: #f9cb9c;
+  background-color: #d99e9e;
 }
 
 .incorrect {
-  background-color: #e06666;
+  background-color: #d92727;
 }
 
 .correct {
-  background-color: #b6d7a8;
+  background-color: #a2d54b;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: no-repeat center/cover url('https://snworksceo.imgix.net/jhn/85697b6d-9900-45f1-96f3-c42414878f0e.sized-1000x1000.jpg?w=1000');
+}
+
+.backgroundImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Optional padding to keep contents within a central area */
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1250px;
+  width: 100%;
+  max-width: 2000px;
+  background-color: white;
+  padding: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.quiz-specific {
+  justify-content: flex-start; /* Align content to the top */
+  align-items: flex-start;     /* Align content to the left */
 }
 
 #quizQuestions {
@@ -21,6 +59,8 @@
 }
 
 .questionBox {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50pt;
   width: 45%;
   box-sizing: border-box;
   height: 30%;
@@ -33,13 +73,15 @@
 }
 
 #quizModal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 28pt;
+  position: relative; 
   padding: 25px 50px 50px 50px;
   border: 2px solid black;
-  background-color: lightgray;
+  background-color: #920000;
+  width: 65%;
+  box-sizing: border-box;
 }
 
 #questionBody {
@@ -62,7 +104,7 @@
 .quizChoice {
   height: 140px;
   width: 45%;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: lightgray;
   font-size: 20px;
   padding: 12px;
@@ -89,7 +131,8 @@
 }
 
 #quizSubmit {
-  background-color: #ffab40;
+  color: white;
+  background-color: #920000;
 }
 
 #choicesContainer {
