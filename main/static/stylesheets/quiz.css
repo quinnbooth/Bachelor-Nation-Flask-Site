@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/precious');
+
 .unanswered {
   background-color: #d99e9e;
 }
@@ -15,7 +17,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: no-repeat center/cover url('https://snworksceo.imgix.net/jhn/85697b6d-9900-45f1-96f3-c42414878f0e.sized-1000x1000.jpg?w=1000');
+  background: no-repeat center/cover url('https://static.vecteezy.com/system/resources/previews/030/914/176/non_2x/red-beautiful-passionate-fresh-rose-petals-love-romantic-valentine-s-day-flowers-texture-background-free-photo.jpg');
 }
 
 .backgroundImage {
@@ -29,18 +31,21 @@ html, body {
 .contentBox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  height: 1250px;
+  height: 100%;
   width: 100%;
   max-width: 2000px;
   background-color: white;
   padding: 50px;
+  padding-top: 100px;
   margin-top: 10px;
   margin-bottom: 50px;
   border: 1px solid black;
   overflow-x: hidden;
   overflow-y: auto;
+  text-align: center;
+  background: linear-gradient(to bottom right, #920000 0%, white 15%, white 85%, #920000 100%);
 }
 
 .quiz-specific {
@@ -50,41 +55,62 @@ html, body {
 
 #quizQuestions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  height: 400px;
-  width: 650px;
   justify-content: space-between;
   align-content: space-between;
 }
 
 .questionBox {
-  font-family: 'Dancing Script', cursive;
-  font-size: 50pt;
+  border-radius: 100px;
+  margin-top: 5vh;
+  font-size: 1.5vw;
   width: 45%;
   box-sizing: border-box;
-  height: 30%;
   display: flex;
-  font-size: 24px;
-  padding: 12px;
+  padding: 24px;
   font-weight: bold;
   border: 1px solid black;
   user-select: none;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+@media (min-width: 1000px) {
+  .questionBox {
+    font-size: 20px;
+  }
+}
+
+.quizHeader {
+  font-family: 'Precious', sans-serif;
+  font-size: 60px;
+  color: black;
+}
+
+.scoreDiv {
+  color: black;
+  margin-top: 50px;
 }
 
 #quizModal {
-  font-family: 'Dancing Script', cursive;
+  /* margin-top: 50px; */
+  text-align: center;
   color: white;
   font-size: 28pt;
   position: relative; 
-  padding: 25px 50px 50px 50px;
-  border: 2px solid black;
-  background-color: #920000;
+  padding: 0px 50px 50px 50px;
+  /* border: 2px solid black; */
+  /* background-color: #920000; */
   width: 65%;
   box-sizing: border-box;
 }
 
 #questionBody {
+  display:flex;
+  align-items: center;
+  justify-content: center;
   margin: 20px 0px;
 }
 

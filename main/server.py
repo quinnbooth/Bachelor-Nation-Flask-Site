@@ -268,6 +268,18 @@ learn_pages = {
       "nextPage": "/envelope/1",
       "timeline": 3
    },
+   "5": {
+      "text":  '''   Great job!\n
+                     You've made it through all the events.\n
+                     Now let's see if you've really become an expert on The Bachelor...
+               ''',
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
+      "speakerImage": main_images["host"],
+      "speakerName": "Jesse Palmer",
+      "audio": "implement this last if we have time???",
+      "nextPage": "/quiz",
+      "timeline": 9
+   }
 }
 
 rose_pages = {
@@ -359,7 +371,7 @@ rose_pages = {
       "roses": 1,
       "contestants": [1, 2, 0],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
-      "nextPage": "/quiz",
+      "nextPage": "/learn/5",
       "handbook_q": "What happens in the engagement ceremony?",
       "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!",
       "instructions": "Who will be the lucky girl? Who will go home empty-handed?",

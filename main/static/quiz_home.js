@@ -33,7 +33,7 @@ $("#document").ready(function () {
   if (data.correct.length + data.incorrect.length === 6) {
     $("#quizContainer").append(
       `
-        <div>
+        <div class="scoreDiv">
           Total Score: ${data.correct.length}/6 (${Math.round(
         (data.correct.length * 100) / 6
       )}%)
