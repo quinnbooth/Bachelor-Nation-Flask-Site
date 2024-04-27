@@ -39,18 +39,6 @@ $("#document").ready(function() {
         }
     }
 
-    let dialogueContainer = $("#dialogueContainer");
-    // Append dialogues one by one and fade them in
-    $.each(dialogues, function(index, dialogue) {
-        dialogueContainer.append(dialogue);
-        dialogue.fadeIn(500); // Fade in each dialogue over 500 milliseconds
-    });
-
-    // Scroll the dialogue container to show the new dialogues smoothly
-    dialogueContainer.animate({
-        scrollTop: dialogueContainer.prop("scrollHeight")
-    }, 1000); // Smooth scroll over 1000 milliseconds
-
     const body = document.body;
     const backgroundDiv = document.createElement("div");
     backgroundDiv.style.position = "fixed";
@@ -70,5 +58,31 @@ $("#document").ready(function() {
     $("#nextButton").click(function(event) {
         window.location.href = data['nextPage'];
     });
+
+    // Fade in the dialogues from the bottom
+    
+    let dialogueContainer = $("#dialogueContainer");
+    let currentDialogueIndex = 1;
+    
+    function appendDialogues() {
+        if (currentDialogueIndex < dialogues.length) {
+            $(dialogues[currentDialogueIndex]).hide().appendTo(dialogueContainer).fadeIn(2000);
+            currentDialogueIndex++;
+        } 
+        if (currentDialogueIndex >= dialogues.length) {
+            $("#nextButton").prop("disabled", false);
+        }
+    }
+
+    $("#nextButton").prop("disabled", true);
+    $(dialogues[0]).hide().appendTo(dialogueContainer).fadeIn(2000);
+    $(document).on("click", function() {
+        appendDialogues();
+        $("#dialogueContainer").animate({
+            scrollTop: $("#dialogueContainer")[0].scrollHeight
+        }, 300);
+    });
+    
+    
     
 });

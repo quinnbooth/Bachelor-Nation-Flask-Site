@@ -495,6 +495,11 @@ dialogue_pages = {
          "speakerImage": main_images["host"],
          "dialogue": "Ok cool so basically this works."
       },
+      "6": {
+         "speakerName": "Joey",
+         "speakerImage": main_images["bachelor"],
+         "dialogue": "Oh yes it does. And now we are done with our dialogue, so the Continue button should turn red."
+      },
       "backgroundImg": main_images["town"],
       "nextPage": "/learn/2",
       "timeline": 1
