@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 main_images = {
    "host": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/163580111_288668689295431_2707202046743395725_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=62bwzzbew-UAb6pIuaB&_nc_ht=scontent-lga3-1.xx&oh=00_AfCPkt3xUkIo7M5b7m4rBqlHmvYQHG2YFmYEFub----_9w&oe=66456A48",
-   "bachelor": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg"
+   "bachelor": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg",
+   "town": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
 }
 
 # rn, all the same vids for testing
@@ -471,6 +472,35 @@ quiz_pages = {
    }
 }
 
+# Number the pieces of dialogue however you want (no repeat ids). The order you type them here determines their placement. Odd number = Left. Even number = Right.
+dialogue_pages = {
+   "1": {
+      "1": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images["host"],
+         "dialogue": "Hello Joey! Let's test out this new multi-bubble dialogue feature together. What do you say?"
+      },
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images["bachelor"],
+         "dialogue": "Hey Jesse! Yes, that sounds wonderful. It seems to be working nicely."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images["bachelor"],
+         "dialogue": "I'm going to talk twice in a row because I'm cool like that B)"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images["host"],
+         "dialogue": "Ok cool so basically this works."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/learn/2",
+      "timeline": 1
+   }
+}
+
 # Sets used to keep track of which questions user got correct / incorrect in quiz section
 correct = list()
 incorrect = list()
@@ -507,6 +537,12 @@ def learn(page_num):
    global learn_pages
    data = learn_pages[str(page_num)]
    return render_template('learn.html', data=data)
+
+@app.route('/dialogue/<page_num>')
+def dialogue(page_num):
+   global dialogue_pages
+   data = dialogue_pages[str(page_num)]
+   return render_template('dialogue.html', data=data)
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):
