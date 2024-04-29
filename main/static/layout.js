@@ -23,7 +23,7 @@ function updateTimeline(progress) {
         "/rose/6",
         "/rose/7",
         "/rose/8",
-        "/quiz"
+        "/learn/5"
     ];
 
     for (let i = 0; i < stages.length; i++) {

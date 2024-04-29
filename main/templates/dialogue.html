@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'dialogue.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='stylesheets/dialogue.css')}}">
+
+<script>
+    let data = {{data|tojson}};
+</script>
+
+<div class="row" >
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div id="learnContainer">
+            <span id="clickPrompt">Click anywhere to progress dialogue.</span>
+            <div id="dialogueContainer"></div>
+            <button id="nextButton">Continue</button>
+        </div>  
+    </div>
+    <div class="col-1"></div>
+</div>
+
+
+{% endblock %}

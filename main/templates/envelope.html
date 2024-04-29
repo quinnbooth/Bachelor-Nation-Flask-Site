@@ -9,15 +9,19 @@
     let data = {{data|tojson}};
 </script>
 
-<div id="envelope-container" class="envelope-closed">
-    <div id="front-envelope" class="front">
-        <p id="click-text">Click to open</p>
+<div class="backgroundImage">
+    <div class="contentBox">
+        <div id="envelope-container" class="envelope-closed">
+            <div id="front-envelope" class="front">
+                <p id="click-text">*GASP* A letter has arrived!<br>Click to open</p>
+            </div>
+            <div id="back-envelope" class="back"></div>
+            <div id="letter" class="letter letter-off">
+                <p id="letter-content">{{ data['text']|replace('\n', '<br>')|safe }}</p>
+            </div> 
+        </div>
+        <button id="nextButton">Next</button>
     </div>
-    <div id="back-envelope" class="back"></div>
-    <div id="letter" class="letter letter-off">
-        <p id="letter-content">{{ data['text'] }}</p> <!-- Use the 'text' from data directly here -->
-    </div> 
 </div>
-<button id="nextButton">Next</button>
 
 {% endblock %}

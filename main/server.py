@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 main_images = {
    "host": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/163580111_288668689295431_2707202046743395725_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=62bwzzbew-UAb6pIuaB&_nc_ht=scontent-lga3-1.xx&oh=00_AfCPkt3xUkIo7M5b7m4rBqlHmvYQHG2YFmYEFub----_9w&oe=66456A48",
-   "bachelor": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg"
+   "bachelor": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg",
+   "town": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
 }
 
 # rn, all the same vids for testing
@@ -268,6 +269,18 @@ learn_pages = {
       "nextPage": "/envelope/1",
       "timeline": 3
    },
+   "5": {
+      "text":  '''   Great job!\n
+                     You've made it through all the events.\n
+                     Now let's see if you've really become an expert on The Bachelor...
+               ''',
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
+      "speakerImage": main_images["host"],
+      "speakerName": "Jesse Palmer",
+      "audio": "implement this last if we have time???",
+      "nextPage": "/quiz",
+      "timeline": 9
+   }
 }
 
 rose_pages = {
@@ -359,7 +372,7 @@ rose_pages = {
       "roses": 1,
       "contestants": [1, 2, 0],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
-      "nextPage": "/quiz",
+      "nextPage": "/learn/5",
       "handbook_q": "What happens in the engagement ceremony?",
       "handbook": "During the engagement ceremony, Joey chooses which contestant he will marry, and which he will reject. Each one of the girls will arrive to the engagement spot in an order they don’t know. The first woman is usually the woman that gets broken up with, and the last woman is the one that Joey proposes to. Note: The bachelor doesn’t necessarily need to propose to someone or leave the show with them!",
       "instructions": "Who will be the lucky girl? Who will go home empty-handed?",
@@ -459,6 +472,40 @@ quiz_pages = {
    }
 }
 
+# Number the pieces of dialogue however you want (no repeat ids). The order you type them here determines their placement. Odd number = Left. Even number = Right.
+dialogue_pages = {
+   "1": {
+      "1": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images["host"],
+         "dialogue": "Hello Joey! Let's test out this new multi-bubble dialogue feature together. What do you say?"
+      },
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images["bachelor"],
+         "dialogue": "Hey Jesse! Yes, that sounds wonderful. It seems to be working nicely."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images["bachelor"],
+         "dialogue": "I'm going to talk twice in a row because I'm cool like that B)"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images["host"],
+         "dialogue": "Ok cool so basically this works."
+      },
+      "6": {
+         "speakerName": "Joey",
+         "speakerImage": main_images["bachelor"],
+         "dialogue": "Oh yes it does. And now we are done with our dialogue, so the Continue button should turn red."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/learn/2",
+      "timeline": 1
+   }
+}
+
 # Sets used to keep track of which questions user got correct / incorrect in quiz section
 correct = list()
 incorrect = list()
@@ -495,6 +542,12 @@ def learn(page_num):
    global learn_pages
    data = learn_pages[str(page_num)]
    return render_template('learn.html', data=data)
+
+@app.route('/dialogue/<page_num>')
+def dialogue(page_num):
+   global dialogue_pages
+   data = dialogue_pages[str(page_num)]
+   return render_template('dialogue.html', data=data)
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):

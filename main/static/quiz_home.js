@@ -24,16 +24,16 @@ $("#document").ready(function () {
     });
   }
   $(".unanswered").hover(function () {
-    $(this).css("background-color", "#f7b776");
+    $(this).css("background-color", "#ee7e7e");
   });
   $(".unanswered").mouseleave(function () {
-    $(this).css("background-color", "#f9cb9c");
+    $(this).css("background-color", "#d99e9e");
   });
 
   if (data.correct.length + data.incorrect.length === 6) {
     $("#quizContainer").append(
       `
-        <div>
+        <div class="scoreDiv">
           Total Score: ${data.correct.length}/6 (${Math.round(
         (data.correct.length * 100) / 6
       )}%)
