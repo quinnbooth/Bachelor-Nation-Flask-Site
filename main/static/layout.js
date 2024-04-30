@@ -20,10 +20,10 @@ function updateTimeline(progress) {
         "/learn/4",
         "/envelope/2",
         "/envelope/3",
-        "/rose/6",
-        "/rose/7",
-        "/rose/8",
-        "/learn/5"
+        "/learn/5",
+        "/learn/6",
+        "/learn/7",
+        "/learn/8"
     ];
 
     for (let i = 0; i < stages.length; i++) {
