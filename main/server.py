@@ -232,7 +232,8 @@ learn_pages = {
       "timeline": 1
    },
    "2": {
-      "text":  '''   Hey there! I'm <b>Joey</b>, a 28-year-old tennis coach living the dream in Hawaii. A couple of things about me:\n
+      "text":  '''   Hey there! I'm <b>Joey</b>, a 28-year-old tennis coach living the dream in Hawaii.\n
+                     A couple of things about me:\n
                      * Big fan of keeping things chill—drama isn't my game.\n
                      * I'm all about kindness and positive vibes.\n
                      * My biggest fear? Choosing someone who wouldn't choose me back.
@@ -245,15 +246,15 @@ learn_pages = {
       "timeline": 1  
    },
    "3": {
-      "text":  '''   Welcome to the First Week, specifically the First Night!
-                     Tonight, each woman will make their “limousine entrance” and meet Joey for the first time.
-                     Then, a cocktail party inside the Bachelor Mansion will give the women a chance to talk to Joey 1-on-1. Before the night is over, Joey will have his first rose ceremony of the season.)
+      "text":  '''   Welcome to the First Week, specifically the First Night!\n
+                     Tonight, each woman will make their “limousine entrance” and meet Joey for the first time. \n
+                     Continue to learn more about limousine entrances and what else that happens the first night!
                ''',
       "backgroundImg": "https://decider.com/wp-content/uploads/2022/07/LIMO-FEATURE-IMAGE-ENTRANCE.jpg?quality=80&strip=all",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/2",
+      "nextPage": "/dialogue/1",
       "timeline": 2
    },
    "4": {
@@ -477,32 +478,39 @@ dialogue_pages = {
    "1": {
       "1": {
          "speakerName": "Jesse Palmer",
-         "speakerImage": main_images["host"],
-         "dialogue": "Hello Joey! Let's test out this new multi-bubble dialogue feature together. What do you say?"
+         "speakerImage": main_images['host'],
+         "dialogue": "Hey Joey, happy first night! We're here at the Bachelor Mansion. Ready to learn about Limousine Entrances?"
       },
       "2": {
          "speakerName": "Joey",
-         "speakerImage": main_images["bachelor"],
-         "dialogue": "Hey Jesse! Yes, that sounds wonderful. It seems to be working nicely."
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Thanks Jesse! Yes, what happens during these entrances?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Each contestant has the chance to exit a limo (or their vehicle of choice), usually with a special prop to make a memorable first impression! After meeting you, each contestant will go inside to await the rest of the night's events."
       },
       "4": {
          "speakerName": "Joey",
-         "speakerImage": main_images["bachelor"],
-         "dialogue": "I'm going to talk twice in a row because I'm cool like that B)"
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Sounds like a key moment for them and me. What happens the rest of the night?"
       },
       "5": {
          "speakerName": "Jesse Palmer",
-         "speakerImage": main_images["host"],
-         "dialogue": "Ok cool so basically this works."
+         "speakerImage": main_images['host'],
+         "dialogue": "After the limo entrances, you'll have your first group cocktail party. Women will have chances to grab you and talk to you one-on-one."
       },
-      "6": {
-         "speakerName": "Joey",
-         "speakerImage": main_images["bachelor"],
-         "dialogue": "Oh yes it does. And now we are done with our dialogue, so the Continue button should turn red."
+      "7": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home."
       },
       "backgroundImg": main_images["town"],
-      "nextPage": "/learn/2",
-      "timeline": 1
+      "nextPage": "/learn/4",
+      "timeline": 1,
+      # rose data 
+      "rose_data": rose_pages["2"]
    }
 }
 
@@ -546,8 +554,14 @@ def learn(page_num):
 @app.route('/dialogue/<page_num>')
 def dialogue(page_num):
    global dialogue_pages
+   global people_list
+   global rose_pages
+   global main_images
    data = dialogue_pages[str(page_num)]
-   return render_template('dialogue.html', data=data)
+   contestants = []
+   for person in data["rose_data"]["contestants"]:
+      contestants.append(people_list[str(person)])
+   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=rose_pages)
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):
