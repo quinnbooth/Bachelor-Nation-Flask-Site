@@ -7,6 +7,9 @@
 
 <script>
     let data = {{data|tojson}};
+    let contestants = {{contestants|tojson}};
+    let main_images = {{main_images|tojson}};
+    let rose_data = {{rose_data|tojson}};
 </script>
 
 <div class="row" >
@@ -15,11 +18,60 @@
         <div id="learnContainer">
             <span id="clickPrompt">Click anywhere to progress dialogue.</span>
             <div id="dialogueContainer"></div>
+            <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal">
+                Try the rose ceremony! 
+            </button>
             <button id="nextButton">Continue</button>
         </div>  
     </div>
     <div class="col-1"></div>
 </div>
 
+<!-- Handbook Modal-->
+<div class="modal fade" id="handbookModal" tabindex="-1" aria-labelledby="handbookModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="handbookModalLabel">Rose Ceremony</h5>
+                <!-- Close button with Bootstrap 5 data attribute -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="contestantRow"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-2"></div>
+                    <div class="col-8 text-center">
+                        <div class = "row">
+                            <div id="roseRow"></div>
+                        </div>
+                        <div class = "row">
+                            <div id="rosesLeft"></div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Date Modal -->
+<div class="modal fade" id="profileVideoModal" tabindex="-1" aria-labelledby="profileVideoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="profileVideoModalLabel">Video Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe id="videoFrame" width="560" height="315" src="" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

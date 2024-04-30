@@ -232,7 +232,8 @@ learn_pages = {
       "timeline": 1
    },
    "2": {
-      "text":  '''   Hey there! I'm <b>Joey</b>, a 28-year-old tennis coach living the dream in Hawaii. A couple of things about me:\n
+      "text":  '''   Hey there! I'm <b>Joey</b>, a 28-year-old tennis coach living the dream in Hawaii.\n
+                     A couple of things about me:\n
                      * Big fan of keeping things chill—drama isn't my game.\n
                      * I'm all about kindness and positive vibes.\n
                      * My biggest fear? Choosing someone who wouldn't choose me back.
@@ -245,22 +246,22 @@ learn_pages = {
       "timeline": 1  
    },
    "3": {
-      "text":  '''   Welcome to the First Week, specifically the First Night!
-                     Tonight, each woman will make their “limousine entrance” and meet Joey for the first time.
-                     Then, a cocktail party inside the Bachelor Mansion will give the women a chance to talk to Joey 1-on-1. Before the night is over, Joey will have his first rose ceremony of the season.)
+      "text":  '''   Welcome to the First Week, specifically the First Night!\n
+                     Tonight, each woman will make their “limousine entrance” and meet Joey for the first time. \n
+                     Continue to learn more about limousine entrances and what else that happens the first night!
                ''',
       "backgroundImg": "https://decider.com/wp-content/uploads/2022/07/LIMO-FEATURE-IMAGE-ENTRANCE.jpg?quality=80&strip=all",
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/2",
+      "nextPage": "/dialogue/1",
       "timeline": 2
    },
    "4": {
       "text":  '''   The first week is over!
                      The next ~7 weeks/episodes will be group dates and 1-on-1’s galore! 
-                     We’ll always end each night with a rose ceremony of course. We’ll even be traveling the world for these dates! 
-                     And finally, we’ll get down to 4 contestants and get ready for hometowns.
+                     We’ll end each episode with a rose ceremony, and we’ll start traveling the world for these dates! \n
+                     Oh! Looks like an envelope has arrived for the first of many group dates. 
                ''',
       "backgroundImg": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
       "speakerImage": main_images["host"],
@@ -271,7 +272,7 @@ learn_pages = {
    },
    "5": {
       "text":  '''   Great job!\n
-                     You've made it through all the events.\n
+                     You've helped Joey make it through all the events.\n
                      Now let's see if you've really become an expert on The Bachelor...
                ''',
       "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
@@ -336,7 +337,7 @@ rose_pages = {
       "roses": 1,
       "contestants": [4, 29],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
-      "nextPage": "/rose/6",
+      "nextPage": "/dialogue/2",
       "handbook_q": "What is a 2-on-1 date?",
       "handbook": "It’s a special kind of date, in which two women are invited by the bachelor to go on a date together. They follow the same flow as the 1-on-1 date, where they have a day-time date, and then a dinner at night, in which a rose is handed out. The 2 -on-1 date is special because only 1 rose is handed out, and the woman who does not receive the rose has to immediately go home. She doesn't even get to go back to the mansion, as prior to the date, both women pack up their belongings so that when the Bachelor makes his decision, the rejected woman’s luggage is removed by staff. The 2-on-1 is used on rare occasion, and this season, it was arranged because there was drama between Maria and Sydney, and Joey needed to get to the bottom of it.",
       "instructions": "Click each girl to get a sneak peek of the dates before choosing!",
@@ -477,32 +478,141 @@ dialogue_pages = {
    "1": {
       "1": {
          "speakerName": "Jesse Palmer",
-         "speakerImage": main_images["host"],
-         "dialogue": "Hello Joey! Let's test out this new multi-bubble dialogue feature together. What do you say?"
+         "speakerImage": main_images['host'],
+         "dialogue": "Hey Joey, happy first night! We're here at the Bachelor Mansion. Ready to learn about Limousine Entrances?"
       },
       "2": {
          "speakerName": "Joey",
-         "speakerImage": main_images["bachelor"],
-         "dialogue": "Hey Jesse! Yes, that sounds wonderful. It seems to be working nicely."
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Thanks Jesse! Yes, what happens during these entrances?"
       },
-      "4": {
-         "speakerName": "Joey",
-         "speakerImage": main_images["bachelor"],
-         "dialogue": "I'm going to talk twice in a row because I'm cool like that B)"
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Each contestant has the chance to exit a limo (or their vehicle of choice), usually with a special prop to make a memorable first impression!"
       },
       "5": {
          "speakerName": "Jesse Palmer",
-         "speakerImage": main_images["host"],
-         "dialogue": "Ok cool so basically this works."
+         "speakerImage": main_images['host'],
+         "dialogue": "One contestant pulled up in a boat this season, and another pulled up in a truck lugging a Christmas tree, since she grew up on a tree farm. Other contestants stuck with the limo but brought things like a voodoo doll for their hometown NOLA, or a chemistry set to represent their studies. There's always a catchy pick-up line to go with too!"
       },
       "6": {
          "speakerName": "Joey",
-         "speakerImage": main_images["bachelor"],
-         "dialogue": "Oh yes it does. And now we are done with our dialogue, so the Continue button should turn red."
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Sounds like a key moment for them and me. What happens the rest of the night?"
+      },
+      "7": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "After the limo entrances, you'll have your first group cocktail party. The women will have already gathered inside the mansion following their entrances, and now will have the chance to grab you and talk to you one-on-one."
+      },
+      "9": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home."
       },
       "backgroundImg": main_images["town"],
-      "nextPage": "/learn/2",
-      "timeline": 1
+      "nextPage": "/learn/4",
+      "timeline": 1,
+      # rose data 
+      "rose_data": rose_pages["2"]
+   },
+   "2": {
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Jesse, what happens during the hometown visits?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Hometowns are key, Joey. You’ll visit the hometown of each of the final four contestants to meet their families."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Sounds important. What’s the goal of these visits?"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "It’s a chance to see how well you blend with their families and to deepen your bond with each contestant. Remember, after these visits, you’ll have to make a tough decision at the rose ceremony where one woman will go home."
+      },
+      "6": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "It's getting serious. Thanks for the insight, Jesse. I’ll do my best to follow my gut instincts."
+      }, 
+      "backgroundImg": main_images["town"],
+      "nextPage": "/dialogue/3",
+      "timeline": 6,
+      # rose data 
+      "rose_data": rose_pages["6"]
+   },
+   "3": {
+      "1": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Joey, we’re getting close to the Fantasy Suites. It’s a really special part of the show. Do you know what happens?"
+      },
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "I know a little, Jesse, but can you tell me more?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Sure thing. You and the last three contestants will have private overnight dates in really nice places, like a hotel suite. There won’t be any cameras, so it’s just you guys."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "That sounds like a good chance to really see how we get along. What should I think about during these dates?"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Use this time to talk about personal stuff and what you both want in the future. It’s important to know what you need in a partner before the next rose ceremony. After this, you'll be down to 2 women."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/dialogue/4",
+      "timeline": 7,
+      # rose data 
+      "rose_data": rose_pages["7"]
+   },
+   "4": {
+      "1": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Joey, next up is the engagement ceremony. It's a big moment. Are you clear on how it works?"
+      },
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "I think so, but can you go over the details one more time?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Absolutely. During the ceremony, each of the final contestants arrives at the engagement spot in an unknown order. Traditionally, the first woman to arrive is usually not the one chosen, and the last one is who you might propose to."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Got it. And I don’t have to propose if it doesn’t feel right, correct?"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Exactly right, Joey. Just remember, this is a huge step, and whatever you decide, make sure it feels right. You’ve got this! Everyone’s rooting for you to find your true happiness."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/learn/5",
+      "timeline": 8,
+      # rose data 
+      "rose_data": rose_pages["8"]
+
    }
 }
 
@@ -547,8 +657,14 @@ def learn(page_num):
 @app.route('/dialogue/<page_num>')
 def dialogue(page_num):
    global dialogue_pages
+   global people_list
+   global rose_pages
+   global main_images
    data = dialogue_pages[str(page_num)]
-   return render_template('dialogue.html', data=data)
+   contestants = []
+   for person in data["rose_data"]["contestants"]:
+      contestants.append(people_list[str(person)])
+   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=rose_pages)
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):
