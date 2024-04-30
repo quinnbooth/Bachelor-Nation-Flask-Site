@@ -145,7 +145,8 @@ $("#document").ready(function() {
     
     // rose.js 
     
-    roses_left = parseInt(data['roses']);
+    roses_left = parseInt(rose_data['roses']);
+    console.log("rose left: ", roses_left);
 
     let title = data['title'];
     let description = data['description'];
