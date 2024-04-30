@@ -449,7 +449,7 @@ quiz_pages = {
    },
    "5": {
       "questionId": "5",
-      "question": "In the engagement ceremony, the bachelor may:",
+      "question": "In the engagement ceremony, what can the bachelor do? Select all that apply:",
       "questionType": "mult_select",
       "choices": ["Leave the show unmarried",
                   "Only leave the show married",
@@ -509,6 +509,7 @@ dialogue_pages = {
 # Sets used to keep track of which questions user got correct / incorrect in quiz section
 correct = list()
 incorrect = list()
+answers = [None, None, None, None, None, None]
 
 # Times the user visited each page
 timestamps = []
@@ -564,7 +565,7 @@ def quiz_home():
       "incorrect": incorrect,
       "timeline": 9
    }
-   return render_template('quiz_home.html', data=data)
+   return render_template('quiz_home.html', data=data, answers=answers)
 
 @app.route('/quiz/<page_num>')
 def quiz(page_num):
@@ -572,7 +573,7 @@ def quiz(page_num):
    data = quiz_pages[str(page_num)]
    global correct
    global incorrect
-   return render_template('quiz.html', data=data, correct=correct, incorrect=incorrect)   
+   return render_template('quiz.html', data=data, correct=correct, incorrect=incorrect, answers=answers)   
 
 #####################  AJAX FUNCTIONS  #####################
 
@@ -580,9 +581,11 @@ def quiz(page_num):
 def quiz_handler():
    global correct
    global incorrect
+   global answers
    json_data = request.get_json()
    isCorrect = json_data["isCorrect"]
    question_id = json_data["id"]
+   answers[int(question_id) - 1] = json_data["answer"]
    
    if isCorrect:
       correct.append(question_id)

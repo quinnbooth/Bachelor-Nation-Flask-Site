@@ -14,20 +14,26 @@
   let data = {{data|tojson}};
   let correct = {{correct|tojson}};
   let incorrect = {{incorrect|tojson}};
+  let answers = {{answers|tojson}};
 </script>
 
 <div class="backgroundImage">
-    <div class="contentBox quiz-specific"> <!-- Added class here -->
-        <div id="questionContainer">
-          <h3>Question {{ data.questionId }}</h3>
-          <h3>{{ data.question }}</h3>
-          <div id="questionBody"></div>
-          <div id="buttonContainer">
-            <a href="/quiz"><div class="quizButton">Back</div></a>
-            <div class="quizButton" id="quizSubmit">Submit</div>
-          </div>
-        </div>
+  <div class="contentBox quiz-specific">
+    <!-- Added class here -->
+    <div id="questionContainer">
+      <div class="header align-self-start">
+        <h3 class="">Question {{ data.questionId }}</h3>
+      </div>
+      <div class="divider"></div>
+      <h3>{{ data.question }}</h3>
+      <div id="questionBody"></div>
+      <div class="divider"></div>
+      <div id="buttonContainer">
+        <a href="/quiz"><div class="quizButton">Back</div></a>
+        <div class="quizButton" id="quizSubmit">Submit</div>
+      </div>
     </div>
+  </div>
 </div>
 
 {% endblock %}
