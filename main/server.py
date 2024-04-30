@@ -658,13 +658,12 @@ def learn(page_num):
 def dialogue(page_num):
    global dialogue_pages
    global people_list
-   global rose_pages
    global main_images
    data = dialogue_pages[str(page_num)]
    contestants = []
    for person in data["rose_data"]["contestants"]:
       contestants.append(people_list[str(person)])
-   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=rose_pages)
+   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=data["rose_data"])
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):

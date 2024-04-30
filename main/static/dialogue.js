@@ -53,7 +53,9 @@ function load_contestants(contestants) {
             }
         });
         profile.on('click', function() {
-            var videoUrl = data.videos[contestant.name];
+            console.log("before",rose_data);
+            console.log("url", rose_data['videos'][contestant.name]);
+            var videoUrl = rose_data['videos'][contestant.name];
             $('#videoFrame').attr('src', videoUrl);
 
             var myModal = new bootstrap.Modal(document.getElementById('profileVideoModal'));
