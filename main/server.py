@@ -280,7 +280,7 @@ learn_pages = {
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/dialogue/2",
-      "timeline": 3
+      "timeline": 6
    },
    "6": {
       "text":  '''   Things are really amping up! Now it's time for fantasy suites. \n\nContinue to learn about this milestone!  
@@ -290,7 +290,7 @@ learn_pages = {
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/dialogue/3",
-      "timeline": 3
+      "timeline": 7
    },
    "7": {
       "text":  '''   And finally, with 2 women left, it's time for the engagement, the final rose ceremony. 
@@ -300,7 +300,7 @@ learn_pages = {
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/dialogue/4",
-      "timeline": 3
+      "timeline": 8
    },
    "8": {
       "text":  '''   Great job!\n
@@ -312,7 +312,7 @@ learn_pages = {
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
       "nextPage": "/learn/9",
-      "timeline": 9
+      "timeline": 8
    },
    "9": {
       "text":  '''   Now let's see if you've really become an expert on The Bachelor...
@@ -460,7 +460,7 @@ dialogue_pages = {
       },
       "backgroundImg": main_images["town"],
       "nextPage": "/learn/4",
-      "timeline": 1,
+      "timeline": 2,
       # rose data 
       "rose_data": rose_pages["2"]
    },
@@ -559,7 +559,6 @@ dialogue_pages = {
       "timeline": 8,
       # rose data 
       "rose_data": rose_pages["8"]
-
    }
 }
 
