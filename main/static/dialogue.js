@@ -15,7 +15,7 @@ function load_contestants(contestants) {
         profile.append(`<img src=${contestant.image} alt=${contestant.name}>`);
         profile.append(`<div class="profileName">${contestant.name}</div>`);
         profile.append(`<div class="popup">${contestant.description}</div>`);
-        if (!is_first_page) {
+        if (!(page_num === '1')) {
             profile.droppable({
                 drop: function(event, ui) {
                     if (roses_left > 0) {
@@ -164,18 +164,31 @@ $("#document").ready(function() {
 
     $("#title").text(title);
     load_contestants(contestants);
-    if (!is_first_page) {
+    if (page_num === '2' || page_num === '3' ||  page_num === '4') {
+        $("#handbookButton").text("Explore the date!");
+        $("#handbookModalLabel").html("Date Example");
         $("#roseRow").append(rose);
         $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
-        roses_left -= 1;
+        roses_left -= 1; 
         $("#interface").text(description);
-        $("#instruction").html("Click each woman to get a sneak peek of her time with Joey!<br>Then drag the rose(s) to who you want to stay!")
+        if ( page_num ==='2') {
+            $("#instruction").html("Click on any woman to get a sneak peek of the group's time with Joey!<br>Then drag the rose to who you want to ensure stays!<br>For this date, contestants who don't get a rose still stay - elimination happens at the rose ceremony later.")
+        } else if ( page_num ==='3') {
+            $("#instruction").html("Click on the lucky contestant to get a sneak peek of her time with Joey!<br>Then drag the rose to her if you want to ensure she stays!<br>For this date, contestants who don't get a rose still stay - elimination happens at the rose ceremony later.")
+        } else {
+            $("#instruction").html("Click on each woman to get a sneak peek of her time with Joey!<br>Then drag the rose(s) to who you want to stay!<br>For this date, the contestant that doesn't get a rose is eliminated.")
+        }
+    } else if (!(page_num === '1')) {
+        $("#roseRow").append(rose);
+        $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
+        roses_left -= 1; 
+        $("#interface").text(description);
+        $("#instruction").html("Click on each woman to get a sneak peek of her time with Joey!<br>Then drag the rose(s) to who you want to stay!")
     } else {
         $("#handbookButton").text("Meet the contestants!");
         $("#handbookModalLabel").html("Limo Entrance");
         $("#instruction").html("Below are all the contestants! Hover over their pictures to see more background information.")
     }
-    
 
     
 });

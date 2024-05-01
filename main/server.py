@@ -10,16 +10,19 @@ main_images = {
    "host": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/163580111_288668689295431_2707202046743395725_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=62bwzzbew-UAb6pIuaB&_nc_ht=scontent-lga3-1.xx&oh=00_AfCPkt3xUkIo7M5b7m4rBqlHmvYQHG2YFmYEFub----_9w&oe=66456A48",
    "bachelor": "https://cdn.vox-cdn.com/thumbor/1NO2SkFoypW9pVXBSzGrADH8Iq8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/25213676/BachelorJoey_ABC.jpg",
    "town": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
+   "mansion": "https://www.housedigest.com/img/gallery/facts-about-the-bachelor-mansion-that-the-public-doesnt-know/l-intro-1633089957.jpg",
+   "mexico": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
+   "hometown": "https://t-mobile.scene7.com/is/image/Tmusprod/3801493_HTG_M1-1%3AHERO-desktop?ts=1687384550792&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&dpr=off"
 }
 
 # rn, all the same vids for testing
 main_vids = {
    "one_date": {
-      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466"
+      "Daisy": "https://www.youtube.com/embed/ISSmtDBeltQ?si=DEiw6-QIb_gBYP4i&amp;start=80"
    },
    "two_date": {
-      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?start=99&end=404",
-      "Sydney": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466"
+      "Maria": "https://www.youtube.com/embed/rJJfZvU_1o4?si=h8GYfT1269_6hyI4&amp;start=337",
+      "Sydney": "https://www.youtube.com/embed/rJJfZvU_1o4?si=cIz0uRI8IyqdE06r&amp;start=200"
    },
    "group_date": {
       "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
@@ -275,7 +278,7 @@ learn_pages = {
                      After many cocktail parties and rose ceremonies, Joey has now eliminated all but 4 women.\n
                      Now, we'll begin Hometowns, a huge milestone in Joey's relationship with each woman.  
                ''',
-      "backgroundImg": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
+      "backgroundImg": main_images['hometown'],
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
@@ -283,9 +286,9 @@ learn_pages = {
       "timeline": 6
    },
    "6": {
-      "text":  '''   Things are really amping up! Now it's time for fantasy suites. \n\nContinue to learn about this milestone!  
+      "text":  '''   Things are really amping up! Now it's time for fantasy suites. We're here in Tulum, Mexico for fantasy suites and everything that follows.\n\nContinue to learn about this milestone!  
                ''',
-      "backgroundImg": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
+      "backgroundImg": main_images['mexico'],
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
@@ -295,7 +298,7 @@ learn_pages = {
    "7": {
       "text":  '''   And finally, with 2 women left, it's time for the engagement, the final rose ceremony. 
                ''',
-      "backgroundImg": "https://www.travelandleisure.com/thmb/Uyakmz5op2sZaMPourbuKi4lYmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg",
+      "backgroundImg":  main_images['mexico'],
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
@@ -458,7 +461,7 @@ dialogue_pages = {
          "speakerImage": main_images['host'],
          "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home. And, remember it's not just you picking throughout the experience. Each contestant can go home at any time she chooses to."
       },
-      "backgroundImg": main_images["town"],
+      "backgroundImg": main_images["mansion"],
       "nextPage": "/learn/4",
       "timeline": 2,
       # rose data 
@@ -571,7 +574,7 @@ dialogue_pages = {
          "speakerImage": main_images['bachelor'],
          "dialogue": "It's getting serious. Thanks for the insight, Jesse. I’ll do my best to follow my gut instincts."
       }, 
-      "backgroundImg": main_images["town"],
+      "backgroundImg": main_images['hometown'],
       "nextPage": "/learn/6",
       "timeline": 6,
       # rose data 
@@ -603,7 +606,7 @@ dialogue_pages = {
          "speakerImage": main_images['host'],
          "dialogue": "Use this time to talk about personal stuff and what you both want in the future. It’s important to know what you need in a partner before the next rose ceremony. After this, you'll be down to 2 women."
       },
-      "backgroundImg": main_images["town"],
+      "backgroundImg": main_images['mexico'],
       "nextPage": "/learn/7",
       "timeline": 7,
       # rose data 
@@ -635,7 +638,7 @@ dialogue_pages = {
          "speakerImage": main_images['host'],
          "dialogue": "Exactly right, Joey. And if you do propose, you'll do it with a ring from our ring designer Neil Lane and with a final rose. Just remember, this is a huge step, and whatever you decide, make sure it feels right. You’ve got this! Everyone’s rooting for you to find your true happiness."
       },
-      "backgroundImg": main_images["town"],
+      "backgroundImg": main_images['mexico'],
       "nextPage": "/learn/8",
       "timeline": 8,
       # rose data 
@@ -783,7 +786,8 @@ def dialogue(page_num):
    for person in data["rose_data"]["contestants"]:
       contestants.append(people_list[str(person)])
    is_first_page = (page_num == '1')
-   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=data["rose_data"], is_first_page=is_first_page)
+   is_special_page = (page_num == '2' or page_num == '3' or  page_num == '4')
+   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=data["rose_data"], page_num=page_num)
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):
