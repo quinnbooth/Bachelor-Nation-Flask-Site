@@ -91,6 +91,31 @@ body {
   color: black;
 }
 
+#start-over {
+  color: white;
+  border-radius: 12px;
+  margin-top: 2vh;
+  font-size: 1.5vw;
+  width: 30%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 24px;
+  font-weight: bold;
+  border: 1px solid black;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #920000;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+#start-over:hover {
+  background-color: #ff6666;
+}
+
 @media (min-width: 1000px) {
   .questionBox {
     font-size: 20px;

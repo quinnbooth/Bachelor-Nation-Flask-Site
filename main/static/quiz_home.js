@@ -38,6 +38,11 @@ $("#document").ready(function () {
         (data.correct.length * 100) / 6
       )}%)
         </div>
+        <a href="/" class="d-flex justify-content-center no-underline">
+          <div id="start-over">
+            Start over
+          </div>
+        </a>
       `
     );
   }
