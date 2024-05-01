@@ -64,9 +64,6 @@ body {
   );
 }
 
-.quiz-specific {
-}
-
 #quizQuestions {
   display: flex;
   flex-direction: row;
