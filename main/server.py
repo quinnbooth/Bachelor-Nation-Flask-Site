@@ -34,18 +34,18 @@ main_vids = {
    },
    "hometowns": {
       "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Rachel": "https://www.youtube.com/embed/xCDc75KHlqY?start=187&end=255",
-      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?start=99&end=404",
-      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466"
+      "Rachel": "https://www.youtube.com/embed/xCDc75KHlqY?si=Z3_dd2HJPcoajTIY&amp;start=147",
+      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?si=Q8iKYAL2B0wF-7nd&amp;start=32",
+      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?si=kciZF310Hv6-s_Ha&amp;start=43"
    },
    "fantasy_suites": {
-      "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Rachel": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Daisy": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106"
+      "Kelsey A.": "https://www.youtube.com/embed/5TWOoTRo9YU?si=LMomDWkB_EunBT4X&amp;start=45",
+      "Rachel": "https://www.youtube.com/embed/MFJKtDY9vaw?si=c81KEltuAAARxZGb&amp;start=6",
+      "Daisy": "https://www.youtube.com/embed/btVOa3tEWs8?si=z_1q3VoqbVgQ6ecJ&amp;start=26"
    },
    "engagement": {
-      "Kelsey A.": "https://www.youtube.com/watch?v=xWIjgu-EQPw",
-      "Daisy": "https://www.youtube.com/embed/0UFgP97ScGM?start=163&end=427"
+      "Kelsey A.": "https://www.youtube.com/embed/xWIjgu-EQPw?si=5xsDuNFp3SfLr8LJ&amp;start=1",
+      "Daisy": "https://www.youtube.com/embed/0UFgP97ScGM?si=OJoXsSg_RwDU9z9I&amp;start=1"
    }
 }
 

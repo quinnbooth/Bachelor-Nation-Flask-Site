@@ -146,9 +146,7 @@ $("#document").ready(function() {
             scrollTop: $("#dialogueContainer")[0].scrollHeight
         }, 300);
     });
-    
     // rose.js 
-    
     roses_left = parseInt(rose_data['roses']);
     console.log("rose left: ", roses_left);
 
@@ -161,7 +159,6 @@ $("#document").ready(function() {
     $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
     roses_left -= 1;
     $("#interface").text(description);
-    $('#handbookButton').click(function() {
-        console.log('Button was clicked!');
-    });
+
+    
 });
