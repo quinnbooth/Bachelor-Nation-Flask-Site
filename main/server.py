@@ -25,15 +25,14 @@ main_vids = {
       "Sydney": "https://www.youtube.com/embed/rJJfZvU_1o4?si=cIz0uRI8IyqdE06r&amp;start=200"
    },
    "group_date": {
-      "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
-      "Rachel": "https://www.youtube.com/embed/xCDc75KHlqY?start=187&end=255",
-      "Maria": "https://www.youtube.com/embed/_Pc_UTIdAPs?start=99&end=404",
-      "Daisy": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
-      "Jess": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
-      "Jenn": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
-      "Allison": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
-      "Autumn": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
-      "Chandler": "https://www.youtube.com/embed/YYvIk0kZeZI?start=180&end=466",
+      "Kelsey T.": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Rachel": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Daisy": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Jess": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Starr": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Evalin": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Autumn": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
+      "Katelyn": "https://www.youtube.com/embed/r1UnLYeCRwU?si=vRYNomtAzu3vvt4E",
    },
    "hometowns": {
       "Kelsey A.": "https://www.youtube.com/embed/cpak2-HWohw?si=CdAe7kLk7kSOPHiI&amp;start=106",
@@ -345,7 +344,7 @@ rose_pages = {
    "3": {
       "title": "Group Dates",
       "roses": 1,
-      "contestants": [1, 2, 3, 4, 5, 6, 7],
+      "contestants": [16, 3, 2, 13, 28, 11, 6, 14],
       "description": "This is a description of TEST. Hover over people for a description. Then give out your roses one by one. ",
       "nextPage": "/envelope/2",
       "handbook_q": "What is a group date?",
