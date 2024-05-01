@@ -453,7 +453,7 @@ dialogue_pages = {
          "speakerImage": main_images['host'],
          "dialogue": "After the limo entrances, you'll have your first group cocktail party. The women will have already gathered inside the mansion following their entrances, and now will have the chance to grab you and talk to you one-on-one."
       },
-      "10": {
+      "11": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
          "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home. And, remember it's not just you picking throughout the experience. Each contestant can go home at any time she chooses to."
