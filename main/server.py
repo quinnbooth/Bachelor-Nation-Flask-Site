@@ -305,7 +305,17 @@ learn_pages = {
    "8": {
       "text":  '''   Great job!\n
                      You've helped Joey make it through all the events.\n
-                     Now let's see if you've really become an expert on The Bachelor...
+                     The engagement happens in the final episode of the season. This episode also features a studio portion filmed about 6 months after. Everyone you know and loves comes back to join me in watching the engagement. We'll also hear from our final couple post-engagement!\n\nI also announce the new Bachelorette, who is always from the current season's pool of contestants, and usually a runner-up or fan-favorite. She'll be in Joey's position and finding love from her own batch of new contestants. 
+               ''',
+      "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
+      "speakerImage": main_images["host"],
+      "speakerName": "Jesse Palmer",
+      "audio": "implement this last if we have time???",
+      "nextPage": "/learn/9",
+      "timeline": 9
+   },
+   "9": {
+      "text":  '''   Now let's see if you've really become an expert on The Bachelor...
                ''',
       "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
       "speakerImage": main_images["host"],
@@ -446,7 +456,7 @@ dialogue_pages = {
       "10": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
-         "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home."
+         "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home. And, remember it's not just you picking throughout the experience. Each contestant can go home at any time she chooses to."
       },
       "backgroundImg": main_images["town"],
       "nextPage": "/learn/4",
@@ -532,7 +542,7 @@ dialogue_pages = {
       "3": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
-         "dialogue": "Absolutely. During the ceremony, each of the final contestants arrives at the engagement spot in an unknown order. Traditionally, the first woman to arrive is usually not the one chosen, and the last one is who you might propose to."
+         "dialogue": "Absolutely. Before the actual ceremony, each of the remaining 2 women will get to meet your family and have a last 1-on-1 date with you. Then, during the ceremony, each of the final contestants arrives at the engagement spot in an unknown order. Traditionally, the first woman to arrive is usually not the one chosen, and the last one is who you might propose to."
       },
       "4": {
          "speakerName": "Joey",
@@ -542,7 +552,7 @@ dialogue_pages = {
       "5": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
-         "dialogue": "Exactly right, Joey. Just remember, this is a huge step, and whatever you decide, make sure it feels right. You’ve got this! Everyone’s rooting for you to find your true happiness."
+         "dialogue": "Exactly right, Joey. And if you do propose, you'll do it with a ring from our ring designer Neil Lane and with a final rose. Just remember, this is a huge step, and whatever you decide, make sure it feels right. You’ve got this! Everyone’s rooting for you to find your true happiness."
       },
       "backgroundImg": main_images["town"],
       "nextPage": "/learn/8",
