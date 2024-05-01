@@ -279,7 +279,7 @@ learn_pages = {
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/dialogue/2",
+      "nextPage": "/dialogue/5",
       "timeline": 6
    },
    "6": {
@@ -289,7 +289,7 @@ learn_pages = {
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/dialogue/3",
+      "nextPage": "/dialogue/6",
       "timeline": 7
    },
    "7": {
@@ -299,7 +299,7 @@ learn_pages = {
       "speakerImage": main_images["host"],
       "speakerName": "Jesse Palmer",
       "audio": "implement this last if we have time???",
-      "nextPage": "/dialogue/4",
+      "nextPage": "/dialogue/7",
       "timeline": 8
    },
    "8": {
@@ -468,6 +468,87 @@ dialogue_pages = {
       "2": {
          "speakerName": "Joey",
          "speakerImage": main_images['bachelor'],
+         "dialogue": "Jesse, how do group dates work on the show?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "On group dates, you’ll spend time with several women at once, except the one who just had a 1-on-1. It’s your chance for fun activities and private chats during a cocktail party."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Do I give out roses during these dates?"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Yes, handing out a rose means she’s safe until the next round. If someone doesn’t receive one, they’ll have to wait for the rose ceremony."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/envelope/2",
+      "timeline": 3,
+      # rose data 
+      "rose_data": rose_pages["3"]
+   },
+   "3": {
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Jesse, can you explain what a 1-on-1 date is?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "Sure, Joey. On a 1-on-1 date, you select one contestant for a special day. It starts with a romantic activity planned by you, followed by a dinner where you both can have a deeper conversation."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Sounds intimate. What happens at the end of the date?"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "At the end, you decide whether to give her a rose. If she receives one, she’s safe from the next rose ceremony and automatically moves to the next round."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/envelope/3",
+      "timeline": 4,
+      # rose data 
+      "rose_data": rose_pages["4"]
+   },
+   "4": {
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Jesse, what exactly is a 2-on-1 date?"
+      },
+      "3": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "A 2-on-1 date involves you and two contestants. Similar to a 1-on-1, you all spend the day together, ending with a dinner. The twist is, only one rose is available."
+      },
+      "4": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "So what happens to the woman who doesn't get the rose?"
+      },
+      "5": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "She has to leave immediately. Both contestants pack their belongings before the date, and the one who doesn’t receive the rose goes home right away, without returning to the mansion."
+      },
+      "backgroundImg": main_images["town"],
+      "nextPage": "/learn/5",
+      "timeline": 5,
+      # rose data 
+      "rose_data": rose_pages["5"]
+   },
+   "5": {
+      "2": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
          "dialogue": "Jesse, what happens during the hometown visits?"
       },
       "3": {
@@ -496,7 +577,7 @@ dialogue_pages = {
       # rose data 
       "rose_data": rose_pages["6"]
    },
-   "3": {
+   "6": {
       "1": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
@@ -528,7 +609,7 @@ dialogue_pages = {
       # rose data 
       "rose_data": rose_pages["7"]
    },
-   "4": {
+   "7": {
       "1": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
@@ -569,7 +650,7 @@ envelope_pages = {
                   Love, Joey
             ''',
    "audio": "implement this last if we have time???",
-   "nextPage": "/rose/3",
+   "nextPage": "/dialogue/2",
    "timeline": 3
    },
    "2": {
@@ -578,7 +659,7 @@ envelope_pages = {
                      Love, Joey
                ''',
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/4",
+      "nextPage": "/dialogue/3",
       "timeline": 4
    },
    "3": {
@@ -587,7 +668,7 @@ envelope_pages = {
                      Love, Joey
                ''',
       "audio": "implement this last if we have time???",
-      "nextPage": "/rose/5",
+      "nextPage": "/dialogue/4",
       "timeline": 5
    }
 }
