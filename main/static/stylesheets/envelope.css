@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/precious");
+
 html, body {
     height: 100%;
     margin: 0;
@@ -30,8 +32,19 @@ html, body {
     border: 1px solid black;
 }
 
+#envelope-header {
+    font-family: "Precious", sans-serif;
+    position: center;
+    padding-top: 70px;
+    font-size: 25pt;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    top: 10px; 
+    left: 70%;
+}
+
 .letter {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Precious", sans-serif;
     position: absolute;
     width: 300px; /* fill the entire front flap */
     height: 250px; /* adjust height accordingly */
@@ -91,7 +104,7 @@ html, body {
 }
 
 .letter {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Precious", sans-serif;
     position: center;
     width: calc(100% - 10px);
     height: calc(85% - 10px);
@@ -106,7 +119,6 @@ html, body {
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
     z-index: 999;
 }
 
@@ -116,7 +128,7 @@ html, body {
 
 #letter-content {
     color: #000;
-    font-size: 32px;
+    font-size: 30px;
     padding: 20px;
     transition: opacity 0.5s ease, z-index 0s 0.5s;
     z-index: 9999;
@@ -151,8 +163,8 @@ html, body {
 }
 
 #click-text {
+    font-family: Arial, sans-serif;
     position: absolute;
-    font-family: 'Dancing Script', cursive;
     padding-top: 70px;
     font-size: 20pt;
     text-align: center;

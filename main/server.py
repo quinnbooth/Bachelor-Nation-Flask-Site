@@ -597,10 +597,10 @@ quiz_pages = {
    },
    "2": {
       "questionId": "2",
-      "question": "Question here?",
+      "question": "What is the name of our host?",
       "questionType": "fill_blank",
       "choices": [],
-      "answer": ["answer here"],
+      "answer": ["Jesse Palmer"],
       "timeline": 9
    },
    "3": {
@@ -616,7 +616,7 @@ quiz_pages = {
       "question": "The last ceremony doesn’t involve a rose at all.",
       "questionType": "true_false",
       "choices": [],
-      "answer": ["true"],
+      "answer": ["false"],
       "timeline": 9
    },
    "5": {

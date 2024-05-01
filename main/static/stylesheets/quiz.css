@@ -113,7 +113,8 @@ body {
 }
 
 .scoreDiv {
-  color: black;
+  color: #920000;
+  font-weight: bold;
   margin-top: 50px;
 }
 

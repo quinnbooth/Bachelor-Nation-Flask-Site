@@ -4,6 +4,7 @@ $(document).ready(function() {
     var $nextButton = $('#nextButton');
     var $clickText = $('#click-text');
     var $letter = $('#letter');
+    var $header = $('#envelope-header');
 
     $nextButton.hide();
 
@@ -17,10 +18,12 @@ $(document).ready(function() {
         if ($envelope.hasClass('envelope-open')) {
             $clickText.hide();
             $nextButton.show();
+            $header.hide();
             $letter.slideDown(500);
         } else {
             $clickText.show();
             $nextButton.hide();
+            $header.show();
             $letter.slideUp(500);
         }
     });
