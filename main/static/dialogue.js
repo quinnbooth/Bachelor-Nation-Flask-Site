@@ -36,9 +36,9 @@ function load_contestants(contestants) {
                     let nextPopup = $(`<div id='nextPopup'>`);
                     nextPopup.text("You gave out all of your roses!")
                     let nextBtn = $(`<button id='nextBtn'>`);
-                    nextBtn.text("Continue");
+                    nextBtn.text("Exit");
                     nextBtn.click(function(event) {
-                        window.location.href = data['nextPage'];
+                        $('#handbookModal').modal('hide');
                     });
                     
                     nextPopup.append(nextBtn);
@@ -58,8 +58,10 @@ function load_contestants(contestants) {
             var videoUrl = rose_data['videos'][contestant.name];
             $('#videoFrame').attr('src', videoUrl);
 
-            var myModal = new bootstrap.Modal(document.getElementById('profileVideoModal'));
-            myModal.show();
+            // var myModal = new bootstrap.Modal(document.getElementById('profileVideoModal'));
+            // myModal.show();
+            $('#embeddedVideo').attr('src', videoUrl);
+            $('#videoInsert').css('display', 'block');
         });
         $("#contestantRow").append(profile);
     });

@@ -5,6 +5,7 @@ html, body {
     overflow: hidden;
 }
 
+
 #dialogueContainer {
     padding: 20px;
     width: 90%;
@@ -33,6 +34,14 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+
+#videoInsert {
+    display: none;
+    margin: 0 auto;
+    width: 560px;
+    height: 315px; /* Adjust dimensions as needed */
+}
+
 
 #learnContainer {
     align-self: flex-end;
