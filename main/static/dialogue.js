@@ -99,6 +99,13 @@ $("#document").ready(function() {
                 dialogue_row.append(speaker);
                 dialogue_row.append(dialogue_box);
             }
+
+            // append video
+            if (dialogue_data['videoURL']) {
+                let iframe = $(`<iframe width="400" height="315" src="${dialogue_data['videoURL']}"frameborder="0" allowfullscreen></iframe>`);
+                dialogue_box.append(iframe);
+            }
+
             dialogues.push(dialogue_row);
         }
     }
@@ -163,6 +170,10 @@ $("#document").ready(function() {
         roses_left -= 1;
         $("#interface").text(description);
         $("#instruction").html("Click each woman to get a sneak peek of her time with Joey!<br>Then drag the rose(s) to who you want to stay!")
+    } else {
+        $("#handbookButton").text("Meet the contestants!");
+        $("#handbookModalLabel").html("Limo Entrance");
+        $("#instruction").html("Below are all the contestants! Hover over their pictures to see more background information.")
     }
     
 

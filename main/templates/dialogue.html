@@ -19,20 +19,9 @@
         <div id="learnContainer">
             <span id="clickPrompt">Click anywhere to progress dialogue.</span>
             <div id="dialogueContainer"></div>
-
-
-
-            {% if is_first_page %}
-                <!-- Button for the first page -->
-                <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal">
-                    Click to watch an example!
-                </button>
-            {% else %}
-                <!-- Button for other pages -->
                 <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal">
                     Try the rose ceremony!
                 </button>
-            {% endif %}
 
             <!-- <button type="button" class="btn btn-primary" id="handbookButton" data-bs-toggle="modal" data-bs-target="#handbookModal">
                 Try the rose ceremony! 
@@ -57,7 +46,7 @@
                 <div class="row mt-4">
                     <div class="col-12 text-center" id="instruction">
                     </div>
-                </div>
+                </div>           
                 <div class="row mt-4">
                     <div class="col-12">
                         <div id="contestantRow"></div>                      

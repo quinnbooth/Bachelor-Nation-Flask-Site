@@ -425,19 +425,25 @@ dialogue_pages = {
       "5": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
-         "dialogue": "One contestant pulled up in a boat this season, and another pulled up in a truck lugging a Christmas tree, since she grew up on a tree farm. Other contestants stuck with the limo but brought things like a voodoo doll for their hometown NOLA, or a chemistry set to represent their studies. There's always a catchy pick-up line to go with too!"
-      },
-      "6": {
-         "speakerName": "Joey",
-         "speakerImage": main_images['bachelor'],
-         "dialogue": "Sounds like a key moment for them and me. What happens the rest of the night?"
+         "dialogue": "One contestant pulled up in a boat this season, and another pulled up in a truck lugging a Christmas tree, since she grew up on a tree farm. Other contestants stuck with the limo but brought things like a voodoo doll for their hometown NOLA, or a chemistry set to represent their studies. There's always a catchy pick-up line!\nHere's an example!",
       },
       "7": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
-         "dialogue": "After the limo entrances, you'll have your first group cocktail party. The women will have already gathered inside the mansion following their entrances, and now will have the chance to grab you and talk to you one-on-one."
+         "dialogue": "",
+         "videoURL": "https://www.youtube.com/embed/pSiGVuIAwI0?si=_lEgpnNiv86H4u2i&start=1"
+      },
+      "8": {
+         "speakerName": "Joey",
+         "speakerImage": main_images['bachelor'],
+         "dialogue": "Sounds like a key moment for them and me. What happens the rest of the night?"
       },
       "9": {
+         "speakerName": "Jesse Palmer",
+         "speakerImage": main_images['host'],
+         "dialogue": "After the limo entrances, you'll have your first group cocktail party. The women will have already gathered inside the mansion following their entrances, and now will have the chance to grab you and talk to you one-on-one."
+      },
+      "10": {
          "speakerName": "Jesse Palmer",
          "speakerImage": main_images['host'],
          "dialogue": "Finally, you'll have your first rose ceremony too, where you'll choose the women you want to stay based off this first night by handing them a rose. Contestants without a rose will be sent home."

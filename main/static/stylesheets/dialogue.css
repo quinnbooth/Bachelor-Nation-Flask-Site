@@ -35,13 +35,17 @@ html, body {
     justify-content: center;
 }
 
+.dialogueBox {
+    display: flex;
+    flex-direction: column; /* Aligns children in a column */
+}
+
 #videoInsert {
     display: none;
     margin: 0 auto;
     width: 560px;
     height: 315px; /* Adjust dimensions as needed */
 }
-
 
 #learnContainer {
     align-self: flex-end;
