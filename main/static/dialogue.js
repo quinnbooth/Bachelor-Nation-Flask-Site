@@ -15,54 +15,56 @@ function load_contestants(contestants) {
         profile.append(`<img src=${contestant.image} alt=${contestant.name}>`);
         profile.append(`<div class="profileName">${contestant.name}</div>`);
         profile.append(`<div class="popup">${contestant.description}</div>`);
-        profile.droppable({
-            drop: function(event, ui) {
-                if (roses_left > 0) {
-                    let new_rose = rose.clone().draggable({ revert: "invalid" }).css({
-                        "position": "absolute",
-                        "top": "0px",
-                        "left": "calc(50% - 50px)"
-                    });
-                    $("#roseRow").append(new_rose);
-                    $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
-                    roses_left -= 1;
-                    ui.helper.draggable('destroy');
-                    $(this).droppable('disable');
-                } else {
-                    $("#rosesLeft").text(`Roses remaining: 0`);
-                    ui.helper.draggable('destroy');
-                    $(this).droppable('disable');
-
-                    let nextPopup = $(`<div id='nextPopup'>`);
-                    nextPopup.text("You gave out all of your roses!")
-                    let nextBtn = $(`<button id='nextBtn'>`);
-                    nextBtn.text("Exit");
-                    nextBtn.click(function(event) {
-                        $('#handbookModal').modal('hide');
-                    });
-                    
-                    nextPopup.append(nextBtn);
-                    $("#contestantRow").append(nextPopup);
+        if (!is_first_page) {
+            profile.droppable({
+                drop: function(event, ui) {
+                    if (roses_left > 0) {
+                        let new_rose = rose.clone().draggable({ revert: "invalid" }).css({
+                            "position": "absolute",
+                            "top": "0px",
+                            "left": "calc(50% - 50px)"
+                        });
+                        $("#roseRow").append(new_rose);
+                        $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
+                        roses_left -= 1;
+                        ui.helper.draggable('destroy');
+                        $(this).droppable('disable');
+                    } else {
+                        $("#rosesLeft").text(`Roses remaining: 0`);
+                        ui.helper.draggable('destroy');
+                        $(this).droppable('disable');
+    
+                        let nextPopup = $(`<div id='nextPopup'>`);
+                        nextPopup.text("You gave out all of your roses!")
+                        let nextBtn = $(`<button id='nextBtn'>`);
+                        nextBtn.text("Exit");
+                        nextBtn.click(function(event) {
+                            $('#handbookModal').modal('hide');
+                        });
+                        
+                        nextPopup.append(nextBtn);
+                        $("#contestantRow").append(nextPopup);
+                    }
+                },
+                over: function(event, ui) {
+                    $(this).addClass("hovering");
+                },
+                out: function(event, ui) {
+                    $(this).removeClass("hovering");
                 }
-            },
-            over: function(event, ui) {
-                $(this).addClass("hovering");
-            },
-            out: function(event, ui) {
-                $(this).removeClass("hovering");
-            }
-        });
-        profile.on('click', function() {
-            console.log("before",rose_data);
-            console.log("url", rose_data['videos'][contestant.name]);
-            var videoUrl = rose_data['videos'][contestant.name];
-            $('#videoFrame').attr('src', videoUrl);
-
-            // var myModal = new bootstrap.Modal(document.getElementById('profileVideoModal'));
-            // myModal.show();
-            $('#embeddedVideo').attr('src', videoUrl);
-            $('#videoInsert').css('display', 'block');
-        });
+            });
+            profile.on('click', function() {
+                console.log("before",rose_data);
+                console.log("url", rose_data['videos'][contestant.name]);
+                var videoUrl = rose_data['videos'][contestant.name];
+                $('#videoFrame').attr('src', videoUrl);
+    
+                // var myModal = new bootstrap.Modal(document.getElementById('profileVideoModal'));
+                // myModal.show();
+                $('#embeddedVideo').attr('src', videoUrl);
+                $('#videoInsert').css('display', 'block');
+            });
+        }
         $("#contestantRow").append(profile);
     });
 }
@@ -155,10 +157,14 @@ $("#document").ready(function() {
 
     $("#title").text(title);
     load_contestants(contestants);
-    $("#roseRow").append(rose);
-    $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
-    roses_left -= 1;
-    $("#interface").text(description);
+    if (!is_first_page) {
+        $("#roseRow").append(rose);
+        $("#rosesLeft").text(`Roses remaining: ${roses_left}`);
+        roses_left -= 1;
+        $("#interface").text(description);
+        $("#instruction").html("Click each woman to get a sneak peek of her time with Joey!<br>Then drag the rose(s) to who you want to stay!")
+    }
+    
 
     
 });

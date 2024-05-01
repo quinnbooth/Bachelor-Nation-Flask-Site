@@ -686,7 +686,8 @@ def dialogue(page_num):
    contestants = []
    for person in data["rose_data"]["contestants"]:
       contestants.append(people_list[str(person)])
-   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=data["rose_data"])
+   is_first_page = (page_num == '1')
+   return render_template('dialogue.html', data=data, contestants=contestants, main_images=main_images, rose_data=data["rose_data"], is_first_page=is_first_page)
 
 @app.route('/envelope/<page_num>')
 def envelope(page_num):
