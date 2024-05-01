@@ -21,12 +21,12 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1250px;
-    width: 2250px;
+    height: 1265px;
+    width: 1078px;
     background-color: white;
     padding: 50px;
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     overflow-y: hidden;
     overflow-x: hidden;
     border: 1px solid black;
@@ -44,7 +44,7 @@ html, body {
 }
 
 .letter {
-    font-family: "Precious", sans-serif;
+    font-family: 'Dancing Script';
     position: absolute;
     width: 300px; /* fill the entire front flap */
     height: 250px; /* adjust height accordingly */
@@ -104,7 +104,7 @@ html, body {
 }
 
 .letter {
-    font-family: "Precious", sans-serif;
+    font-family: 'Dancing Script';
     position: center;
     width: calc(100% - 10px);
     height: calc(85% - 10px);
