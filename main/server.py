@@ -726,12 +726,12 @@ quiz_pages = {
       "questionId": "6",
       "question": "Drag and drop the major events in order!",
       "questionType": "sort",
-      "choices": ["Bachelorette is announced",
-                  "Hometowns",
-                  "Fantasy Suites",
+      "choices": ["Fantasy Suites",
                   "Meeting Joey's family",
+                  "Hometowns",
+                  "Bachelorette is announced",
                   "Joey gets engaged"],
-      "answer": [1, 2, 3, 4, 0],
+      "answer": [2, 0, 1, 4, 3],
       "timeline": 9
    }
 }
