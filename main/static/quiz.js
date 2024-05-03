@@ -301,7 +301,7 @@ function sortHandler(choices, answer) {
         submitHandler({
           isCorrect: true,
           id: data.questionId,
-          current_choice,
+          answer: current_choice,
         });
       }
     });
