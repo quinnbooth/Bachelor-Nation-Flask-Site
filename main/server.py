@@ -221,7 +221,7 @@ people_list = {
 
 learn_pages = {
    "1": {
-      "text":  '''   Welcome to <b>The Bachelor!</b>\n
+      "text":  '''   Hello, contestant! It's a pleasure to have you on <b>The Bachelor!</b>\n
                      I’m your host <b><i>Jesse Palmer</i></b>, and in this show, we will help our Bachelor, Joey, find (and possibly marry) his true love over the course of 11 weeks!\n
                      For this, we have selected 32 lucky girls who Joey will have the opportunity to interact with, and choose among as the weeks go by until we are left with 2 special finalists!\n
                      Let’s go ahead and start!
