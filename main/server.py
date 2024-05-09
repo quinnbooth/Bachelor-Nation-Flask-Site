@@ -719,7 +719,7 @@ quiz_pages = {
                   "Only leave the show married",
                   "Not choose any of the girls",
                   "Choose both of the finalists"],
-      "answer": [0, 2, 3],
+      "answer": [0, 2],
       "timeline": 9
    },
    "6": {
@@ -835,7 +835,7 @@ def quiz_handler():
 ############################################################
 
 if __name__ == '__main__':
-   app.run(debug = True, port=5001)
+   app.run(debug = True, port=5005)
 
 
 
