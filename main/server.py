@@ -221,7 +221,7 @@ people_list = {
 
 learn_pages = {
    "1": {
-      "text":  '''   Welcome to <b>The Bachelor!</b>\n
+      "text":  '''   Hello, contestant! It's a pleasure to have you on <b>The Bachelor!</b>\n
                      I’m your host <b><i>Jesse Palmer</i></b>, and in this show, we will help our Bachelor, Joey, find (and possibly marry) his true love over the course of 11 weeks!\n
                      For this, we have selected 32 lucky girls who Joey will have the opportunity to interact with, and choose among as the weeks go by until we are left with 2 special finalists!\n
                      Let’s go ahead and start!
@@ -307,7 +307,7 @@ learn_pages = {
    "8": {
       "text":  '''   Great job!\n
                      You've helped Joey make it through all the events.\n
-                     The engagement happens in the final episode of the season. This episode also features a studio portion filmed about 6 months after. Everyone you know and loves comes back to join me in watching the engagement. We'll also hear from our final couple post-engagement!\n\nI also announce the new Bachelorette, who is always from the current season's pool of contestants, and usually a runner-up or fan-favorite. She'll be in Joey's position and finding love from her own batch of new contestants. 
+                     The engagement happens in the final episode of the season. This episode also features a studio portion filmed about 6 months after. Everyone you know and love comes back to join me in watching the engagement. We'll also hear from our final couple post-engagement!\n\nI also announce the new Bachelorette, who is always from the current season's pool of contestants, and usually a runner-up or fan-favorite. She'll be in Joey's position and finding love from her own batch of new contestants. 
                ''',
       "backgroundImg": "https://media.glamour.com/photos/57aaac377afdb546548e1e69/16:9/w_1632,h_918,c_limit/IMG_7141-1.JPG",
       "speakerImage": main_images["host"],
